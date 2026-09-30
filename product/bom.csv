@@ -1,5 +1,7 @@
 id,name,quantity,source,material,dimensions_mm,interface
-silver_panel,银色前面板及一体框口（本项目定制）,1,default,PLA，银色,"{""width"": 120, ""height"": 150, ""plate_thickness"": 18, ""band_corner_radius"": 2, ""upper_outer_corner_radius"": 2, ""lower_outer_corner_radius"": 5, ""window_corner_radius"": 5, ""band_width"": 110, ""window_width"": 110, ""window_height"": 38, ""window_center_y"": -50, ""bottom_border"": 6}",
-black_stand,黑色背板与一体底座（本项目定制）,1,default,PLA，黑色,"{""width"": 124, ""depth"": 95, ""height"": 240, ""back_width"": 118, ""back_thickness"": 8, ""backward_tilt_deg"": 12, ""front_transition_top_z"": 14, ""rear_transition_top_z"": 50, ""rear_toe_y"": 38, ""top_corner_radius"": 2}",
-adhesive,适用于 PLA 的双组分环氧胶（小包装）,1,default,,{},0.2 mm 胶层；用于背面定位柱与面板，使用前确认包装标明适配所选塑料
+silver_panel,银色固定Logo面板（本项目定制）,1,default,PLA，银色,"{""width"": 109.2, ""height"": 85.6, ""plate_thickness"": 18, ""corner_radius"": 2, ""rear_side_relief_depth"": 2.8}",4根定位柱与黑色支架胶接；左右为活动拉柄保留0.4 mm侧缝
+pull_handle,银色U形下拉柄（本项目定制）,1,default,PLA，银色,"{""width"": 120, ""height"": 150, ""front_thickness"": 18, ""guide_projection"": 5.5, ""stroke"": 15, ""opening_width"": 110, ""lower_opening_height"": 38, ""bottom_border"": 6, ""lower_corner_radius"": 5, ""guide_length"": 40, ""guide_head_width"": 6, ""guide_neck_width"": 3}",从支架顶部插入双T形导槽；滑动面不涂胶
+black_stand,黑色双导槽支架底座（本项目定制）,1,default,PLA，黑色,"{""width"": 124, ""depth"": 95, ""height"": 240, ""back_width"": 118, ""back_thickness"": 8, ""backward_tilt_deg"": 12, ""front_transition_top_z"": 14, ""rear_transition_top_z"": 50, ""rear_toe_y"": 38, ""top_corner_radius"": 2, ""guide_half_pitch"": 53, ""guide_head_width"": 6.6, ""guide_neck_width"": 3.6, ""guide_depth"": 5.6, ""stroke"": 15}",
+guide_stops,黑色T形导轨上限位塞（本项目定制，同形2件）,2,default,PLA，黑色,"{""head_width"": 6, ""neck_width"": 3, ""length"": 30, ""total_depth"": 5}",对应stop_left、stop_right；拉柄装入后胶接于导轨顶部，塞顶与支架顶齐平
+adhesive,适用于 PLA 的双组分环氧胶（小包装）,1,default,,{},固定面板0.2 mm胶层；限位塞侧面0.3 mm胶缝；滑动面禁止涂胶，先试配
 logo_finish,黑色模型填色漆（小包装）,1,default,,{},填入 0.6 mm 深 Logo 凹槽；涂装前在同种材料边角试涂

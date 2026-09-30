@@ -2,32 +2,48 @@
   "schema_version": 1,
   "status": "ready",
   "bom_ready": true,
-  "requirements_digest": "3169e0f2300ddc7328e03322e2be8748a7ff93bd60e42a06710e15b92e013491",
+  "requirements_digest": "d67b96f10401bf5dad83d3339b520cbbc23d0c6c9b2eddca8290cda2313f859c",
   "items": [
     {
       "id": "silver_panel",
-      "name": "银色前面板及一体框口（本项目定制）",
+      "name": "银色固定Logo面板（本项目定制）",
+      "quantity": 1,
+      "source": "default",
+      "material": "PLA，银色",
+      "dimensions_mm": {
+        "width": 109.2,
+        "height": 85.6,
+        "plate_thickness": 18,
+        "corner_radius": 2,
+        "rear_side_relief_depth": 2.8
+      },
+      "interface": "4根定位柱与黑色支架胶接；左右为活动拉柄保留0.4 mm侧缝"
+    },
+    {
+      "id": "pull_handle",
+      "name": "银色U形下拉柄（本项目定制）",
       "quantity": 1,
       "source": "default",
       "material": "PLA，银色",
       "dimensions_mm": {
         "width": 120,
         "height": 150,
-        "plate_thickness": 18,
-        "band_corner_radius": 2,
-        "upper_outer_corner_radius": 2,
-        "lower_outer_corner_radius": 5,
-        "window_corner_radius": 5,
-        "band_width": 110,
-        "window_width": 110,
-        "window_height": 38,
-        "window_center_y": -50,
-        "bottom_border": 6
-      }
+        "front_thickness": 18,
+        "guide_projection": 5.5,
+        "stroke": 15,
+        "opening_width": 110,
+        "lower_opening_height": 38,
+        "bottom_border": 6,
+        "lower_corner_radius": 5,
+        "guide_length": 40,
+        "guide_head_width": 6,
+        "guide_neck_width": 3
+      },
+      "interface": "从支架顶部插入双T形导槽；滑动面不涂胶"
     },
     {
       "id": "black_stand",
-      "name": "黑色背板与一体底座（本项目定制）",
+      "name": "黑色双导槽支架底座（本项目定制）",
       "quantity": 1,
       "source": "default",
       "material": "PLA，黑色",
@@ -41,8 +57,27 @@
         "front_transition_top_z": 14,
         "rear_transition_top_z": 50,
         "rear_toe_y": 38,
-        "top_corner_radius": 2
+        "top_corner_radius": 2,
+        "guide_half_pitch": 53,
+        "guide_head_width": 6.6,
+        "guide_neck_width": 3.6,
+        "guide_depth": 5.6,
+        "stroke": 15
       }
+    },
+    {
+      "id": "guide_stops",
+      "name": "黑色T形导轨上限位塞（本项目定制，同形2件）",
+      "quantity": 2,
+      "source": "default",
+      "material": "PLA，黑色",
+      "dimensions_mm": {
+        "head_width": 6,
+        "neck_width": 3,
+        "length": 30,
+        "total_depth": 5
+      },
+      "interface": "对应stop_left、stop_right；拉柄装入后胶接于导轨顶部，塞顶与支架顶齐平"
     },
     {
       "id": "adhesive",
@@ -50,7 +85,7 @@
       "quantity": 1,
       "source": "default",
       "procurement_status": "external_procurement_required",
-      "interface": "0.2 mm 胶层；用于背面定位柱与面板，使用前确认包装标明适配所选塑料"
+      "interface": "固定面板0.2 mm胶层；限位塞侧面0.3 mm胶缝；滑动面禁止涂胶，先试配"
     },
     {
       "id": "logo_finish",
@@ -63,7 +98,7 @@
   ],
   "unresolved_items": [],
   "supply_risks": [
-    "胶与填色漆的品牌、价格和库存未查询；不影响几何接口。",
-    "照片比例为估算，打印和胶接强度尚未实物验证。"
+    "无电子元件与标准紧固件；胶、漆具体品牌和库存未查询，不影响几何接口。",
+    "FDM滑动配合、限位强度、摩擦及胶接需实物试印；无自动回位或中间位置锁定。"
   ]
 }

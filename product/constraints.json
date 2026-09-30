@@ -9,28 +9,44 @@
   "parts": [
     {
       "id": "silver_panel",
-      "name": "银色前面板及一体框口（本项目定制）",
+      "name": "银色固定Logo面板（本项目定制）",
+      "quantity": 1,
+      "source": "default",
+      "material": "PLA，银色",
+      "dimensions_mm": {
+        "width": 109.2,
+        "height": 85.6,
+        "plate_thickness": 18,
+        "corner_radius": 2,
+        "rear_side_relief_depth": 2.8
+      },
+      "interface": "4根定位柱与黑色支架胶接；左右为活动拉柄保留0.4 mm侧缝"
+    },
+    {
+      "id": "pull_handle",
+      "name": "银色U形下拉柄（本项目定制）",
       "quantity": 1,
       "source": "default",
       "material": "PLA，银色",
       "dimensions_mm": {
         "width": 120,
         "height": 150,
-        "plate_thickness": 18,
-        "band_corner_radius": 2,
-        "upper_outer_corner_radius": 2,
-        "lower_outer_corner_radius": 5,
-        "window_corner_radius": 5,
-        "band_width": 110,
-        "window_width": 110,
-        "window_height": 38,
-        "window_center_y": -50,
-        "bottom_border": 6
-      }
+        "front_thickness": 18,
+        "guide_projection": 5.5,
+        "stroke": 15,
+        "opening_width": 110,
+        "lower_opening_height": 38,
+        "bottom_border": 6,
+        "lower_corner_radius": 5,
+        "guide_length": 40,
+        "guide_head_width": 6,
+        "guide_neck_width": 3
+      },
+      "interface": "从支架顶部插入双T形导槽；滑动面不涂胶"
     },
     {
       "id": "black_stand",
-      "name": "黑色背板与一体底座（本项目定制）",
+      "name": "黑色双导槽支架底座（本项目定制）",
       "quantity": 1,
       "source": "default",
       "material": "PLA，黑色",
@@ -44,15 +60,34 @@
         "front_transition_top_z": 14,
         "rear_transition_top_z": 50,
         "rear_toe_y": 38,
-        "top_corner_radius": 2
+        "top_corner_radius": 2,
+        "guide_half_pitch": 53,
+        "guide_head_width": 6.6,
+        "guide_neck_width": 3.6,
+        "guide_depth": 5.6,
+        "stroke": 15
       }
+    },
+    {
+      "id": "guide_stops",
+      "name": "黑色T形导轨上限位塞（本项目定制，同形2件）",
+      "quantity": 2,
+      "source": "default",
+      "material": "PLA，黑色",
+      "dimensions_mm": {
+        "head_width": 6,
+        "neck_width": 3,
+        "length": 30,
+        "total_depth": 5
+      },
+      "interface": "对应stop_left、stop_right；拉柄装入后胶接于导轨顶部，塞顶与支架顶齐平"
     }
   ],
   "interfaces": [
     {
       "id": "silver_black_join",
       "implementation": "free",
-      "method": "four locating pins and adhesive",
+      "method": "four fixed-logo locating pins and adhesive",
       "pin_diameter": 4,
       "socket_diameter": 4.6,
       "pin_length": 3,
@@ -69,11 +104,11 @@
         ],
         [
           -45,
-          -26
+          0
         ],
         [
           45,
-          -26
+          0
         ]
       ]
     },
@@ -91,6 +126,37 @@
         -32,
         63
       ]
+    },
+    {
+      "id": "handle_slide",
+      "implementation": "free",
+      "method": "integral twin T rails in printed channels; top-loaded with glued upper stop plugs",
+      "stroke_mm": 15,
+      "direction_panel_local": [
+        0,
+        -1,
+        0
+      ],
+      "lateral_clearance_per_side": 0.3,
+      "depth_clearance": 0.3,
+      "fixed_logo_side_gap": 0.4,
+      "nominal_retaining_shoulder_each_side": 1.2,
+      "lower_stop_panel_y": -10,
+      "upper_stop_panel_y": 45,
+      "moving_rail_parked_y_range": [
+        5,
+        45
+      ],
+      "moving_rail_full_pull_y_range": [
+        -10,
+        30
+      ],
+      "stop_plug_y_range": [
+        45,
+        75
+      ],
+      "return": "manual",
+      "springs": false
     }
   ],
   "electronics": null,
@@ -108,9 +174,37 @@
     ],
     "socket_centers_world_z": [
       220.4370479853239,
-      141.20709232588564
+      166.6389299449646
     ],
-    "socket_half_pitch": 45
+    "socket_half_pitch": 45,
+    "pull_handle_closed_position_mm": [
+      0,
+      29.724115975966416,
+      166.68051228312814
+    ],
+    "pull_handle_open_position_mm": [
+      0,
+      26.605440613700026,
+      152.00829827212107
+    ],
+    "pull_handle_rotation_deg": [
+      78,
+      0,
+      0
+    ],
+    "display_stroke_mm": 15,
+    "stop_positions_mm": [
+      [
+        -53,
+        44.45995386680152,
+        209.5536400166517
+      ],
+      [
+        53,
+        44.45995386680152,
+        209.5536400166517
+      ]
+    ]
   },
   "base_profile": {
     "front": "small tangent circular blend ending at z14 mm",
@@ -120,17 +214,17 @@
   "corner_rounding": {
     "radius_mm": 2,
     "features": [
-      "silver_panel top outer corners",
-      "silver_panel narrow band inner corners",
-      "black_stand top two corners"
+      "fixed silver_panel outline",
+      "pull_handle upper outer corners and upper notch corners",
+      "black_stand top corners"
     ],
     "source": "user"
   },
   "lower_corner_rounding": {
     "radius_mm": 5,
     "features": [
-      "silver_panel bottom outer corners",
-      "silver_panel large window inner corners"
+      "pull_handle lower outer corners",
+      "pull_handle large window inner corners"
     ],
     "source": "user"
   },

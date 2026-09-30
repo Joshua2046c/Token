@@ -12,7 +12,7 @@
           "target": "black_stand",
           "order": 0,
           "path": "design/desk_ornament/source/parts/black_stand/000-black_stand.py",
-          "sha256": "31fa3966d2fc8ba6bf424365f2e0f427af3464b1f01d24793a7d67d5a1e6a14a"
+          "sha256": "a8483d33962009b032d5173033713b65815023ceaa021eab2518d7b79712e2d8"
         }
       ],
       "dependencies": []
@@ -26,7 +26,49 @@
           "target": "silver_panel",
           "order": 0,
           "path": "design/desk_ornament/source/parts/silver_panel/000-silver_panel.py",
-          "sha256": "25516cb9929c94057f1fc87b3392cb67efc4fa0c4205481bc6a7bec1a169e843"
+          "sha256": "0cd567482e0172ee9c8967c73db2f1ab08efc99e6230c399248e1e9dea4d3525"
+        }
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "pull_handle",
+      "label": "pull_handle",
+      "cells": [
+        {
+          "id": "pull_handle",
+          "target": "pull_handle",
+          "order": 0,
+          "path": "design/desk_ornament/source/parts/pull_handle/000-pull_handle.py",
+          "sha256": "7bf73536b6b93c771bf43be106dd668cf5c7bf6cb76f2a7941840479f6797ddf"
+        }
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "stop_left",
+      "label": "stop_left",
+      "cells": [
+        {
+          "id": "stop_left",
+          "target": "stop_left",
+          "order": 0,
+          "path": "design/desk_ornament/source/parts/stop_left/000-stop_left.py",
+          "sha256": "e3ce35f22cec3ca7dcbffc68cf6a172db1b0c5042c6a6d48d8db8a089981d09f"
+        }
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "stop_right",
+      "label": "stop_right",
+      "cells": [
+        {
+          "id": "stop_right",
+          "target": "stop_right",
+          "order": 0,
+          "path": "design/desk_ornament/source/parts/stop_right/000-stop_right.py",
+          "sha256": "a8daa4c8a916669dc51d236b3d1e0611989b4fb841047907482dac6a756e44c8"
         }
       ],
       "dependencies": []
@@ -39,7 +81,7 @@
       "label": "黑色支架底座",
       "material": "pla",
       "kind": "generated",
-      "shapeHash": "482d6b680af496fa7e8eab6e88163b18bbf0d0695e62aacd3bab599286b00a57",
+      "shapeHash": "517e773e01c47d127bd355859178134b9b5fd8c83e6ee1a0d397bfaa0d5a984c",
       "transform": {
         "positionMm": [
           0,
@@ -63,10 +105,10 @@
     {
       "id": "silver_panel",
       "target": "silver_panel",
-      "label": "银色面板",
+      "label": "固定Logo面板",
       "material": "pla",
       "kind": "generated",
-      "shapeHash": "5f44516dce9804a7c5c96b6f91dfd95b2c25d3d1090dd39faa63c298b28286c6",
+      "shapeHash": "0d034ff9debca82bdb72eeaa267a8b4e4c4f142d0d2b6f1edef37ba03ff9ca7f",
       "transform": {
         "positionMm": [
           0,
@@ -86,11 +128,92 @@
         ]
       },
       "datums": []
+    },
+    {
+      "id": "pull_handle",
+      "target": "pull_handle",
+      "label": "银色下拉柄",
+      "material": "pla",
+      "kind": "generated",
+      "shapeHash": "67a2212cfe14d6cfb958ca4ed4712fcfdded7b0ae1135458896088c2a7f5a089",
+      "transform": {
+        "positionMm": [
+          0,
+          26.605440613700026,
+          152.00829827212107
+        ],
+        "rotationDeg": [
+          78,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
+      "id": "stop_left",
+      "target": "stop_left",
+      "label": "导轨上限位塞",
+      "material": "pla",
+      "kind": "generated",
+      "shapeHash": "b62a3f4997ac4e4044d622d68ab1d1e865d50961385b76a016cbdabb819f0f88",
+      "transform": {
+        "positionMm": [
+          -53,
+          44.45995386680152,
+          209.5536400166517
+        ],
+        "rotationDeg": [
+          78,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
+      "id": "stop_right",
+      "target": "stop_right",
+      "label": "导轨上限位塞",
+      "material": "pla",
+      "kind": "generated",
+      "shapeHash": "5801a660a6de4aeaa03982ff72b146d626012c0b1b3e046ddabcf2ced3eba98c",
+      "transform": {
+        "positionMm": [
+          53,
+          44.45995386680152,
+          209.5536400166517
+        ],
+        "rotationDeg": [
+          78,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
     }
   ],
   "assets": [],
   "fits": [],
-  "updatedAt": "2026-09-30T17:14:01.570Z",
+  "updatedAt": "2026-09-30T17:23:50.311Z",
   "parameters": {
     "black_stand": {
       "black_stand_width": 118,
@@ -109,13 +232,24 @@
       "black_stand_socket_depth": 3.4,
       "black_stand_socket_half_pitch": 45,
       "black_stand_socket_upper_z": 220.4370479853239,
-      "black_stand_socket_lower_z": 141.20709232588564,
+      "black_stand_socket_lower_z": 166.6389299449646,
       "black_stand_tilt_deg": 12,
-      "black_stand_top_corner_radius": 2
+      "black_stand_top_corner_radius": 2,
+      "black_stand_guide_half_pitch": 53,
+      "black_stand_guide_head_width": 6.6,
+      "black_stand_guide_neck_width": 3.6,
+      "black_stand_guide_back_z": -5.8,
+      "black_stand_guide_shoulder_z": -2.7,
+      "black_stand_guide_lower_y": -10,
+      "black_stand_guide_entry_y": 90,
+      "black_stand_guide_origin_y": 29.724115975966416,
+      "black_stand_guide_origin_z": 166.68051228312814,
+      "black_stand_guide_stroke": 15,
+      "black_stand_guide_parked_lower_y": 5
     },
     "silver_panel": {
-      "silver_panel_width": 120,
-      "silver_panel_height": 150,
+      "silver_panel_width": 109.2,
+      "silver_panel_height": 85.6,
       "silver_panel_thickness": 18,
       "silver_panel_corner_radius": 2,
       "silver_panel_window_width": 110,
@@ -129,11 +263,50 @@
       "silver_panel_pin_length": 3,
       "silver_panel_pin_half_pitch": 45,
       "silver_panel_pin_upper_y": 55,
-      "silver_panel_pin_lower_y": -26,
+      "silver_panel_pin_lower_y": 0,
       "silver_panel_logo_width": 32,
       "silver_panel_logo_depth": 0.6,
       "silver_panel_logo_x": 0,
-      "silver_panel_logo_y": 32
+      "silver_panel_logo_y": 32,
+      "silver_panel_center_y": 32.2,
+      "silver_panel_rear_relief_x": 50.8,
+      "silver_panel_rear_relief_depth": 2.8
+    },
+    "pull_handle": {
+      "pull_handle_width": 120,
+      "pull_handle_height": 150,
+      "pull_handle_thickness": 18,
+      "pull_handle_top_radius": 2,
+      "pull_handle_bottom_radius": 5,
+      "pull_handle_opening_width": 110,
+      "pull_handle_window_height": 38,
+      "pull_handle_window_y": -50,
+      "pull_handle_notch_bottom_y": -21,
+      "pull_handle_notch_radius": 2,
+      "pull_handle_guide_half_pitch": 53,
+      "pull_handle_guide_length": 40,
+      "pull_handle_guide_center_y": 25,
+      "pull_handle_guide_head_width": 6,
+      "pull_handle_guide_neck_width": 3,
+      "pull_handle_guide_head_back_z": -5.5,
+      "pull_handle_guide_head_thickness": 2.5,
+      "pull_handle_guide_neck_front_z": 1,
+      "pull_handle_wing_back_z": 0.4,
+      "pull_handle_wing_thickness": 2
+    },
+    "stop_left": {
+      "stop_left_width": 6,
+      "stop_left_neck_width": 3,
+      "stop_left_length": 30,
+      "stop_left_head_thickness": 2.5,
+      "stop_left_neck_height": 2.5
+    },
+    "stop_right": {
+      "stop_right_width": 6,
+      "stop_right_neck_width": 3,
+      "stop_right_length": 30,
+      "stop_right_head_thickness": 2.5,
+      "stop_right_neck_height": 2.5
     }
   }
 }

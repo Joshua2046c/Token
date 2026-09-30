@@ -2,7 +2,7 @@
   "version": 2,
   "artifact_level": "assembly",
   "deliverable_intent": "printable_part",
-  "summary": "参考图造型的银黑分件桌面摆件，银色正面采用用户图 3 Logo。",
+  "summary": "银黑分件桌面摆件，固定Logo面板与15 mm手动下拉银色拉柄。",
   "required_interfaces": [
     {
       "id": "silver_black_join",
@@ -23,6 +23,13 @@
       "kind": "support",
       "description": "黑色底座以平整底面支撑摆件独立站立于桌面",
       "source": "experience_pack_recommendation",
+      "required": true
+    },
+    {
+      "id": "handle_slide",
+      "kind": "mechanical_mating",
+      "description": "沿倾斜面板方向滑动15 mm；双T形导向防脱，上下行程限位",
+      "source": "user_requested",
       "required": true
     }
   ],
@@ -80,11 +87,17 @@
       "source": "user_requested",
       "description": "两镂空对齐；下外角与内镂空同R；收窄底边",
       "path": "product/references/uploads/20260930T171155990Z-1-mark.png"
+    },
+    {
+      "id": "pull_handle_markup",
+      "source": "user_requested",
+      "description": "外围银色边条与下框口做成15 mm下拉拉柄，固定Logo面板",
+      "path": "product/references/uploads/20260930T171557359Z-1-mark.png"
     }
   ],
   "assembly_story": {
-    "installation": "银色前面板与黑色支架独立制作，背面定位并胶接；放置在桌面。",
-    "maintenance": "擦拭清洁；默认胶接装配，不要求无损频繁拆卸。",
+    "installation": "先将银色拉柄从黑色双导槽顶部装入，再胶接顶部限位塞；固定Logo面板背面定位胶接，禁止胶进入导轨。",
+    "maintenance": "手动下拉与推回；清理导轨，不强拉止挡。胶接后不承诺无损拆卸。",
     "user_access": [
       "正面 Logo 和银黑分件外观"
     ]
@@ -95,7 +108,7 @@
       {
         "role": "desk_ornament",
         "design_id": "desk_ornament",
-        "description": "含银色前面板和黑色支架底座两个主要独立实体的摆件装配",
+        "description": "固定Logo面板、活动银色拉柄、黑色导向支架与两上限位塞",
         "delivery_target": "printable_part",
         "required_formats": [
           "step"
@@ -103,7 +116,8 @@
         "interface_ids": [
           "silver_black_join",
           "logo_face",
-          "desktop_contact"
+          "desktop_contact",
+          "handle_slide"
         ],
         "reference_ids": [
           "reference_1",
@@ -114,7 +128,8 @@
           "correction_front",
           "base_curve_markup",
           "corner_rounding_markup",
-          "opening_alignment_markup"
+          "opening_alignment_markup",
+          "pull_handle_markup"
         ]
       }
     ]

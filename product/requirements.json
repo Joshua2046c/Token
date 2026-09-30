@@ -17,7 +17,8 @@
         "correction_front",
         "base_curve_markup",
         "corner_rounding_markup",
-        "opening_alignment_markup"
+        "opening_alignment_markup",
+        "pull_handle_markup"
       ],
       "source": "user"
     },
@@ -49,8 +50,8 @@
       "source": "default"
     },
     "function": {
-      "value": "固定姿态的纯装饰摆件",
-      "source": "default"
+      "value": "固定Logo面板，外围银色边条与下框口组成可下拉的活动拉柄",
+      "source": "user"
     },
     "base_board": {
       "value": "不适用：默认纯机械，无电路、供电或接线",
@@ -62,13 +63,15 @@
     },
     "main_parts": {
       "value": [
-        "银色一体前面板与框口",
-        "黑色背部支架、框口内衬与底座"
+        "黑色导向支架底座",
+        "银色固定Logo面板",
+        "银色活动拉柄",
+        "左右黑色导轨上限位塞"
       ],
       "source": "default"
     },
     "assembly_method": {
-      "value": "背面隐藏定位结构配胶接，正面不露紧固件；具体结构由 CAD 阶段确定",
+      "value": "固定Logo面板定位胶接；活动拉柄顶部装入双T形导槽，随后胶接独立上限位塞；滑动面禁止涂胶",
       "source": "default"
     },
     "logo_treatment": {
@@ -90,7 +93,9 @@
         "底座平整，CAD 阶段评估重心投影在支撑范围内，实际稳定性由实物验证",
         "完成 CAD 时检查装配干涉并导出相同版本 STEP",
         "标注的顶部背板两角及窄横槽内角为R2 mm，与银色顶部圆角统一",
-        "两镂空左右边缘对齐；银色下外角与大镂空同为R5；底边宽6 mm"
+        "两镂空左右边缘对齐；银色下外角与大镂空同为R5；底边宽6 mm",
+        "拉柄沿面板向下运动15 mm，Logo面板固定；导向防脱并有上下硬限位",
+        "校核闭合、中间和完全下拉位置无非预期干涉，实物验证滑动手感"
       ],
       "source": "default"
     },
@@ -112,8 +117,10 @@
     },
     "front_panel_size_mm": {
       "value": {
-        "width": 120,
-        "height": 150,
+        "silver_assembly_width": 120,
+        "silver_assembly_closed_height": 150,
+        "fixed_logo_width": 109.2,
+        "fixed_logo_height": 85.6,
         "thickness": 18
       },
       "source": "default"
@@ -157,11 +164,28 @@
     "opening_dimensions_mm": {
       "value": {
         "common_width": 110,
-        "upper_height": 10,
+        "upper_height": 10.4,
         "lower_height": 38,
         "lower_center_y": -50,
-        "bottom_border": 6
+        "bottom_border": 6,
+        "upper_height_condition": "closed; expands by handle displacement"
       },
+      "source": "default"
+    },
+    "pull_handle_stroke_mm": {
+      "value": 15,
+      "source": "user"
+    },
+    "pull_handle_scope": {
+      "value": "按pull_handle_markup红线范围：银色左右边条和下部框口活动，Logo面板固定",
+      "source": "user"
+    },
+    "return_method": {
+      "value": "手动推回；无弹簧自动回位，不保证停留在任意中间位置",
+      "source": "default"
+    },
+    "sliding_clearance_mm": {
+      "value": 0.3,
       "source": "default"
     }
   },

@@ -1,4 +1,3 @@
-# cell: black_stand
 
 black_stand_top_corner_radius = param("black_stand_top_corner_radius", 2.0)
 black_stand_width = param("black_stand_width", 118)
@@ -68,6 +67,26 @@ for x in [-black_stand_socket_half_pitch,black_stand_socket_half_pitch]:
 top_edges=[e for e in body.edges() if abs(abs(e.center().X)-w/2)<1e-5 and abs(e.length-black_stand_thickness)<1e-5 and e.center().Z>h-black_stand_thickness]
 assert len(top_edges)==2
 body=fillet(top_edges,radius=black_stand_top_corner_radius)
+# Guide dimensions are in the silver panel's assembly frame.
+black_stand_guide_half_pitch=param("black_stand_guide_half_pitch",53)
+black_stand_guide_head_width=param("black_stand_guide_head_width",6.6)
+black_stand_guide_neck_width=param("black_stand_guide_neck_width",3.6)
+black_stand_guide_back_z=param("black_stand_guide_back_z",-5.8)
+black_stand_guide_shoulder_z=param("black_stand_guide_shoulder_z",-2.7)
+black_stand_guide_parked_lower_y=param("black_stand_guide_parked_lower_y",5)
+black_stand_guide_entry_y=param("black_stand_guide_entry_y",90)
+black_stand_guide_origin_y=param("black_stand_guide_origin_y",29.724115975966416)
+black_stand_guide_origin_z=param("black_stand_guide_origin_z",166.68051228312814)
+black_stand_guide_stroke=param("black_stand_guide_stroke",15)
+guide_pose=Pos(0,black_stand_guide_origin_y,black_stand_guide_origin_z)*Rot(90-black_stand_tilt_deg,0,0)
+black_stand_guide_lower_y=black_stand_guide_parked_lower_y-black_stand_guide_stroke
+gl=black_stand_guide_entry_y-black_stand_guide_lower_y
+gy=(black_stand_guide_entry_y+black_stand_guide_lower_y)/2
+for sign in [-1,1]:
+    gx=sign*black_stand_guide_half_pitch
+    head=Pos(gx,gy,black_stand_guide_back_z)*Box(black_stand_guide_head_width,gl,black_stand_guide_shoulder_z-black_stand_guide_back_z,align=(Align.CENTER,Align.CENTER,Align.MIN))
+    neck=Pos(gx,gy,black_stand_guide_shoulder_z)*Box(black_stand_guide_neck_width,gl,-black_stand_guide_shoulder_z+0.2,align=(Align.CENTER,Align.CENTER,Align.MIN))
+    body-=guide_pose*(head+neck)
 assert len(body.solids())==1
 assert body.is_valid
 # Uniform-density centroid of this printed body stays within the support footprint.
