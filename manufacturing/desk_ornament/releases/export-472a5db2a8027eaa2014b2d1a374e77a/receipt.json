@@ -1,31 +1,31 @@
 {
   "designId": "desk_ornament",
-  "revision": "9a6b3313d237e428dbe843fd4a9f8b690df52497c74833c0c25a66d9f3576901",
+  "revision": "f364cc90ab620cb808b10eb76f8ac6fcada4e5dcdd5f4cbca7815e96d1497b7f",
   "schemaVersion": 2,
-  "exportId": "export-b81eff2ebfe5c06bcc76e68002f9a890",
-  "generatedAt": "2026-09-30T15:21:37.698Z",
-  "designSha256": "7d3ae36444af7c43b6295f28d21c567451d57e421b8b7d6164282fa812d44900",
+  "exportId": "export-472a5db2a8027eaa2014b2d1a374e77a",
+  "generatedAt": "2026-09-30T16:42:01.606Z",
+  "designSha256": "1b7b5c42f77c4ac35908d44d0c3ec6d8117c42fff786307f8d33ce04a8572e14",
   "role": "desk_ornament",
-  "stateHash": "013271ab458d7da1278669077937477b4de118eba63f73b16a79d2bb16496d0b",
+  "stateHash": "98a44d04e00641777dfe1d7907d45de4aff20c06e8171e76f75e5c0f500a6d8a",
   "stateManifest": {
     "schemaVersion": 3,
     "designId": "desk_ornament",
     "role": "desk_ornament",
     "design": {
-      "revision": "9a6b3313d237e428dbe843fd4a9f8b690df52497c74833c0c25a66d9f3576901",
-      "designSha256": "f524377aa99e375918591f2fecb75acddbfe33224c38ed787c5297d9a5a5c17f",
-      "manifestSha256": "f21befa6a68cbb70d7ffcb3560bb5852761180b3266a35e58ac06b1660ceec02",
-      "stepSha256": "a8602176d23460c05d4a9d1c97b53999e567d8e72e8239b4dc94445353517951",
+      "revision": "f364cc90ab620cb808b10eb76f8ac6fcada4e5dcdd5f4cbca7815e96d1497b7f",
+      "designSha256": "52e05cc72092d6b524a8b61636e770c556ae9ec6bbc260d9b8e711c310fb0a18",
+      "manifestSha256": "ae31539d4278a79ea03fd7c2753aea8519afcb59ccee54991b7442bad719527d",
+      "stepSha256": "cf4a10cadc40fab2bec4ac38b61e293e3d8ffa90a1b67d86ed28039ab00d227c",
       "pcbReleases": []
     },
     "brief": {
       "path": "design/desk_ornament/README.md",
-      "sha256": "f4902e217f3633ff901764faf53660deb7d8993b4ff19f4f3a6ffa76dd042dd9"
+      "sha256": "6d619e64b9dc2723dc8d8b00f8c96a463f76f48b28daaf257ff9c5be4ef4e631"
     },
     "requirement": {
       "artifactContractPath": "product/contract.json",
-      "artifactContractSha256": "db3eca6cb11f95449f44b9de36a5c6e3290197acf9a9b12ddd7c40fda465fbb0",
-      "designRequirementSha256": "e7170e047f207ea0dd6fd4cf2ac13072a91f86d519cc4b6b39ebbee93c4469d9",
+      "artifactContractSha256": "57621f5e264ccc230457586c9e330f9f66592e272d4e5a4bf7e4915e6bce4264",
+      "designRequirementSha256": "1cff3f1302aba6096af1afabebb1d52c104b9ea394ee3e599039e6d2a9c10334",
       "inputs": [
         {
           "role": "external-reference",
@@ -33,6 +33,13 @@
           "path": "product/references/uploads/20260930T151811023Z-1-mark.png",
           "sha256": "a5ca93dc8eeb568d4363d99f8674b822826cea5ae8310a0e1e8bfef1a6e31119",
           "sizeBytes": 159503
+        },
+        {
+          "role": "external-reference",
+          "id": "corner_rounding_markup",
+          "path": "product/references/uploads/20260930T163826886Z-1-mark.png",
+          "sha256": "40b7864322da286413d94fe3c2f412813704fffb7584986b09ad988644963ebf",
+          "sizeBytes": 638854
         },
         {
           "role": "external-reference",
@@ -84,24 +91,24 @@
         "step"
       ]
     },
-    "stateHash": "013271ab458d7da1278669077937477b4de118eba63f73b16a79d2bb16496d0b"
+    "stateHash": "98a44d04e00641777dfe1d7907d45de4aff20c06e8171e76f75e5c0f500a6d8a"
   },
   "buildArtifacts": {
-    "manifestSha256": "f21befa6a68cbb70d7ffcb3560bb5852761180b3266a35e58ac06b1660ceec02",
-    "stepSha256": "a8602176d23460c05d4a9d1c97b53999e567d8e72e8239b4dc94445353517951"
+    "manifestSha256": "ae31539d4278a79ea03fd7c2753aea8519afcb59ccee54991b7442bad719527d",
+    "stepSha256": "cf4a10cadc40fab2bec4ac38b61e293e3d8ffa90a1b67d86ed28039ab00d227c"
   },
   "exportAlgorithm": {
     "version": 1,
     "bootstrapSha256": "ee3801d485ce9c36c94064620fc14c1fad29a20395abe3cd26ac51a72ac105d1"
   },
   "sourceHashes": {
-    "black_stand/black_stand": "dc55c457e9ff977f83e3b9e2df2585241fa308452b88a3b53f1eee9a38cb1cf3",
-    "silver_panel/silver_panel": "243f594ea081bee13968046c704d74425480959c4b165372fd397d7cedd8cc42"
+    "black_stand/black_stand": "31fa3966d2fc8ba6bf424365f2e0f427af3464b1f01d24793a7d67d5a1e6a14a",
+    "silver_panel/silver_panel": "7af8138982d14a008ff7bd77b90a42b2eef2e3654c179aa032d20ef17a785e18"
   },
   "assetHashes": {},
   "shapeHashes": {
-    "black_stand": "e33fb6ce26878c304a1458143ba14556519315d3d76c8095d1f83aa3622d5aec",
-    "silver_panel": "57ffa37d419e751147fca7f5e9e748d82ce5ddeb8ab7f137f61a2ff341c50bd8"
+    "black_stand": "67d37253fac55759ddc07856116f63fa0c659a880759571dbc98bd2c63397caa",
+    "silver_panel": "fbfab89cbebd0e51bcdb83779caca3b00f3f2c13186b37169d647fd6aba02a05"
   },
   "runtime": {
     "manifestHash": "1e67f7323582be77317b7a18cbf288bdd8fcf7386fc2dde7720aca1e1cc8aacc",
@@ -112,10 +119,10 @@
   },
   "artifacts": [
     {
-      "path": "manufacturing/desk_ornament/releases/export-b81eff2ebfe5c06bcc76e68002f9a890/model.step",
+      "path": "manufacturing/desk_ornament/releases/export-472a5db2a8027eaa2014b2d1a374e77a/model.step",
       "role": "model/step",
-      "sha256": "a8602176d23460c05d4a9d1c97b53999e567d8e72e8239b4dc94445353517951",
-      "sizeBytes": 895621
+      "sha256": "cf4a10cadc40fab2bec4ac38b61e293e3d8ffa90a1b67d86ed28039ab00d227c",
+      "sizeBytes": 920910
     }
   ],
   "interference": {
@@ -137,9 +144,9 @@
     "algorithm": "hmac-sha256",
     "keyId": "8f17cd8beacf64e15907a2301382c062",
     "projectId": "4803d325-6142-429f-8386-ae42468e2fcf",
-    "receiptPath": "manufacturing/desk_ornament/releases/export-b81eff2ebfe5c06bcc76e68002f9a890/receipt.json",
-    "payloadSha256": "0848438dfdce43c07fc6a032c18c927cc1c6d841e56453b9181c817fc4b34d23",
-    "mac": "4ecfdef25188bf27e9d97176f598524a15d251f94ccc9b596c9da38b3c5bb2fa"
+    "receiptPath": "manufacturing/desk_ornament/releases/export-472a5db2a8027eaa2014b2d1a374e77a/receipt.json",
+    "payloadSha256": "8d55ea235cd193ae1f599470e37cfefdf7692559bdca58a774c90dd03281e339",
+    "mac": "8340f77dc6487dd3e2e0872c2473f307e8430280907696d077a61c6cb258284b"
   },
   "status": "handoff"
 }

@@ -68,6 +68,12 @@
       "source": "user_requested",
       "description": "用户红线标注：银色厚度乘1.5、黑色后侧圆弧过渡、前侧只在底部小过渡",
       "path": "product/references/uploads/20260930T151811023Z-1-mark.png"
+    },
+    {
+      "id": "corner_rounding_markup",
+      "source": "user_requested",
+      "description": "顶部背板两角及窄横槽两端按银色顶部R2圆角统一；银色厚度在12 mm基础上再增加50%",
+      "path": "product/references/uploads/20260930T163826886Z-1-mark.png"
     }
   ],
   "assembly_story": {
@@ -100,7 +106,8 @@
           "correction_side",
           "correction_lifted",
           "correction_front",
-          "base_curve_markup"
+          "base_curve_markup",
+          "corner_rounding_markup"
         ]
       }
     ]

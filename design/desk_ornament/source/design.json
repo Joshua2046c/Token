@@ -12,7 +12,7 @@
           "target": "black_stand",
           "order": 0,
           "path": "design/desk_ornament/source/parts/black_stand/000-black_stand.py",
-          "sha256": "dc55c457e9ff977f83e3b9e2df2585241fa308452b88a3b53f1eee9a38cb1cf3"
+          "sha256": "31fa3966d2fc8ba6bf424365f2e0f427af3464b1f01d24793a7d67d5a1e6a14a"
         }
       ],
       "dependencies": []
@@ -26,7 +26,7 @@
           "target": "silver_panel",
           "order": 0,
           "path": "design/desk_ornament/source/parts/silver_panel/000-silver_panel.py",
-          "sha256": "243f594ea081bee13968046c704d74425480959c4b165372fd397d7cedd8cc42"
+          "sha256": "7af8138982d14a008ff7bd77b90a42b2eef2e3654c179aa032d20ef17a785e18"
         }
       ],
       "dependencies": []
@@ -39,7 +39,7 @@
       "label": "黑色支架底座",
       "material": "pla",
       "kind": "generated",
-      "shapeHash": "e33fb6ce26878c304a1458143ba14556519315d3d76c8095d1f83aa3622d5aec",
+      "shapeHash": "67d37253fac55759ddc07856116f63fa0c659a880759571dbc98bd2c63397caa",
       "transform": {
         "positionMm": [
           0,
@@ -66,7 +66,7 @@
       "label": "银色面板",
       "material": "pla",
       "kind": "generated",
-      "shapeHash": "57ffa37d419e751147fca7f5e9e748d82ce5ddeb8ab7f137f61a2ff341c50bd8",
+      "shapeHash": "fbfab89cbebd0e51bcdb83779caca3b00f3f2c13186b37169d647fd6aba02a05",
       "transform": {
         "positionMm": [
           0,
@@ -90,7 +90,7 @@
   ],
   "assets": [],
   "fits": [],
-  "updatedAt": "2026-09-30T15:21:37.698Z",
+  "updatedAt": "2026-09-30T16:42:01.606Z",
   "parameters": {
     "black_stand": {
       "black_stand_width": 118,
@@ -110,12 +110,13 @@
       "black_stand_socket_half_pitch": 45,
       "black_stand_socket_upper_z": 220.4370479853239,
       "black_stand_socket_lower_z": 99.14674549433198,
-      "black_stand_tilt_deg": 12
+      "black_stand_tilt_deg": 12,
+      "black_stand_top_corner_radius": 2
     },
     "silver_panel": {
       "silver_panel_width": 120,
       "silver_panel_height": 150,
-      "silver_panel_thickness": 12,
+      "silver_panel_thickness": 18,
       "silver_panel_corner_radius": 2,
       "silver_panel_window_width": 110,
       "silver_panel_window_height": 34,

@@ -1,8 +1,9 @@
 # cell: silver_panel
+# cell: silver_panel
 
 silver_panel_width = param("silver_panel_width", 120)
 silver_panel_height = param("silver_panel_height", 150.0)
-silver_panel_thickness = param("silver_panel_thickness", 8)
+silver_panel_thickness = param("silver_panel_thickness", 18)
 silver_panel_corner_radius = param("silver_panel_corner_radius", 2.0)
 silver_panel_window_width = param("silver_panel_window_width", 110)
 silver_panel_window_height = param("silver_panel_window_height", 34.0)
@@ -24,7 +25,7 @@ t=silver_panel_thickness
 assert 0<silver_panel_logo_depth<t
 plate=extrude(RectangleRounded(silver_panel_width,silver_panel_height,silver_panel_corner_radius),amount=t)
 window=Pos(0,silver_panel_window_y,0)*extrude(RectangleRounded(silver_panel_window_width,silver_panel_window_height,silver_panel_window_radius),amount=t)
-band=Pos(0,silver_panel_band_y,0)*extrude(Rectangle(silver_panel_band_width,silver_panel_band_height),amount=t)
+band=Pos(0,silver_panel_band_y,0)*extrude(RectangleRounded(silver_panel_band_width,silver_panel_band_height,silver_panel_corner_radius),amount=t)
 plate=plate-window-band
 for x in [-silver_panel_pin_half_pitch,silver_panel_pin_half_pitch]:
     for y in [silver_panel_pin_lower_y,silver_panel_pin_upper_y]:

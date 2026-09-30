@@ -1,4 +1,6 @@
+# cell: black_stand
 
+black_stand_top_corner_radius = param("black_stand_top_corner_radius", 2.0)
 black_stand_width = param("black_stand_width", 118)
 black_stand_height = param("black_stand_height", 240.0)
 black_stand_thickness = param("black_stand_thickness", 8.0)
@@ -62,6 +64,10 @@ for x in [-black_stand_socket_half_pitch,black_stand_socket_half_pitch]:
     for z in [black_stand_socket_lower_z,black_stand_socket_upper_z]:
         bore=Pos(x,front_y(z),z)*Rot(-90-black_stand_tilt_deg,0,0)*Cylinder(black_stand_socket_diameter/2,black_stand_socket_depth,align=(Align.CENTER,Align.CENTER,Align.MIN))
         body=body-bore
+# Round the two exposed upper backing corners in the same plane as the silver outline.
+top_edges=[e for e in body.edges() if abs(abs(e.center().X)-w/2)<1e-5 and abs(e.length-black_stand_thickness)<1e-5 and e.center().Z>h-black_stand_thickness]
+assert len(top_edges)==2
+body=fillet(top_edges,radius=black_stand_top_corner_radius)
 assert len(body.solids())==1
 assert body.is_valid
 # Uniform-density centroid of this printed body stays within the support footprint.
