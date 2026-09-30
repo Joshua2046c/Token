@@ -2,7 +2,8 @@ pull_handle_width=param("pull_handle_width",120)
 pull_handle_height=param("pull_handle_height",150)
 pull_handle_thickness=param("pull_handle_thickness",18)
 pull_handle_top_radius=param("pull_handle_top_radius",2)
-pull_handle_bottom_radius=param("pull_handle_bottom_radius",5)
+pull_handle_bottom_radius=param("pull_handle_bottom_radius",12)
+pull_handle_window_radius=param("pull_handle_window_radius",6)
 pull_handle_opening_width=param("pull_handle_opening_width",110)
 pull_handle_window_height=param("pull_handle_window_height",38)
 pull_handle_window_y=param("pull_handle_window_y",-50)
@@ -25,7 +26,7 @@ body=fillet([e for e in body.edges().filter_by(Axis.Z) if e.center().Y<0],radius
 # The upper opening is a U notch, open through the top for the fixed logo panel.
 notch_h=pull_handle_height
 notch=Pos(0,pull_handle_notch_bottom_y+notch_h/2,0)*extrude(RectangleRounded(pull_handle_opening_width,notch_h,pull_handle_notch_radius),amount=t)
-window=Pos(0,pull_handle_window_y,0)*extrude(RectangleRounded(pull_handle_opening_width,pull_handle_window_height,pull_handle_bottom_radius),amount=t)
+window=Pos(0,pull_handle_window_y,0)*extrude(RectangleRounded(pull_handle_opening_width,pull_handle_window_height,pull_handle_window_radius),amount=t)
 body=body-notch-window
 for sign in [-1,1]:
     gx=sign*pull_handle_guide_half_pitch

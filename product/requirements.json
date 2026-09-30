@@ -19,7 +19,9 @@
         "corner_rounding_markup",
         "opening_alignment_markup",
         "pull_handle_markup",
-        "top_cover_markup"
+        "top_cover_markup",
+        "top_notch_fill_markup",
+        "handle_curve_reference"
       ],
       "source": "user"
     },
@@ -94,10 +96,11 @@
         "底座平整，CAD 阶段评估重心投影在支撑范围内，实际稳定性由实物验证",
         "完成 CAD 时检查装配干涉并导出相同版本 STEP",
         "标注的顶部背板两角及窄横槽内角为R2 mm，与银色顶部圆角统一",
-        "两镂空左右边缘对齐；银色下外角与大镂空同为R5；底边宽6 mm",
+        "两镂空左右边缘对齐；银色下外角R12、大镂空R6，按蓝圈参考调整圆弧；底边宽6 mm",
         "拉柄沿面板向下运动15 mm，Logo面板固定；导向防脱并有上下硬限位",
         "校核闭合、中间和完全下拉位置无非预期干涉，实物验证滑动手感",
-        "拉柄收回时顶端与固定Logo面板齐平；导槽不以长塞占据，仅顶部薄盖板防脱"
+        "拉柄收回时顶端与固定Logo面板齐平；导槽不以长塞占据，仅顶部薄盖板防脱",
+        "顶部豁口填料与固定银色主体连为同一实体，拉柄仍可完全推回齐平并下拉15 mm"
       ],
       "source": "default"
     },
@@ -156,7 +159,7 @@
       "source": "user"
     },
     "lower_outline_rounding": {
-      "value": "银色下部外轮廓两角与内部大镂空圆角一致，采用R5 mm",
+      "value": "按最新图2蓝圈手柄下半部分的圆弧轮廓调整，内外嵌套圆弧形成连续圆框外观",
       "source": "user"
     },
     "lower_border_narrowing": {
@@ -197,6 +200,26 @@
     "handle_closed_alignment": {
       "value": "手柄能完全推上去，收回时手柄顶端与固定银色Logo面板顶端齐平",
       "source": "user"
+    },
+    "top_notch_fill": {
+      "value": "顶部两处豁口补全，补料属于固定银色主体，并保留拉柄运动间隙",
+      "source": "user"
+    },
+    "lower_handle_radius_mm": {
+      "value": {
+        "outer": 12,
+        "inner": 6,
+        "basis": "根据蓝圈照片轮廓比例估算，非照片测量"
+      },
+      "source": "default"
+    },
+    "top_notch_fill_dimensions_mm": {
+      "value": {
+        "integral_lip_height": 1.6,
+        "rear_depth": 2.8,
+        "moving_wing_clearance": 0.4
+      },
+      "source": "default"
     }
   },
   "open_questions": []

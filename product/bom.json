@@ -2,7 +2,7 @@
   "schema_version": 1,
   "status": "ready",
   "bom_ready": true,
-  "requirements_digest": "8098f10f0ab13fe962487fad9eb75db124ebe2fe96549d6289f2a04f90a6afbe",
+  "requirements_digest": "84156e4099131c2a005e024f96a35232be01d512cc1fe8b465f64f4c005325b2",
   "items": [
     {
       "id": "silver_panel",
@@ -15,7 +15,8 @@
         "height": 85.6,
         "plate_thickness": 18,
         "corner_radius": 2,
-        "rear_side_relief_depth": 2.8
+        "rear_side_relief_depth": 2.8,
+        "rear_relief_top_lip": 1.6
       },
       "interface": "4根定位柱与黑色支架胶接；左右为活动拉柄保留0.4 mm侧缝"
     },
@@ -34,11 +35,12 @@
         "opening_width": 110,
         "lower_opening_height": 38,
         "bottom_border": 6,
-        "lower_corner_radius": 5,
+        "lower_corner_radius": 12,
         "guide_length": 40,
         "guide_head_width": 6,
         "guide_neck_width": 3,
-        "guide_center_y": 53
+        "guide_center_y": 53,
+        "window_corner_radius": 6
       },
       "interface": "从支架顶部插入双T形导槽；滑动面不涂胶"
     },

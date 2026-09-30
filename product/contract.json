@@ -99,6 +99,18 @@
       "source": "user_requested",
       "description": "取消导轨长堵塞，只保留顶部防脱盖板；手柄推回后顶端与固定银色面板齐平",
       "path": "product/references/uploads/20260930T172717432Z-1-mark.png"
+    },
+    {
+      "id": "top_notch_fill_markup",
+      "source": "user_requested",
+      "description": "顶部两处豁口补到固定银色主体上",
+      "path": "product/references/uploads/20260930T173416904Z-1-mark.png"
+    },
+    {
+      "id": "handle_curve_reference",
+      "source": "user_requested",
+      "description": "蓝圈照片：按手柄下半部内外圆弧形态细化轮廓",
+      "path": "product/references/uploads/20260930T173416904Z-2-ishot-2026-10-01-1-32-58.png"
     }
   ],
   "assembly_story": {
@@ -136,7 +148,9 @@
           "corner_rounding_markup",
           "opening_alignment_markup",
           "pull_handle_markup",
-          "top_cover_markup"
+          "top_cover_markup",
+          "top_notch_fill_markup",
+          "handle_curve_reference"
         ]
       }
     ]

@@ -14,11 +14,12 @@ silver_panel_logo_x=param("silver_panel_logo_x",0)
 silver_panel_logo_y=param("silver_panel_logo_y",32)
 silver_panel_rear_relief_x=param("silver_panel_rear_relief_x",50.8)
 silver_panel_rear_relief_depth=param("silver_panel_rear_relief_depth",2.8)
+silver_panel_rear_relief_top_lip=param("silver_panel_rear_relief_top_lip",1.6)
 t=silver_panel_thickness
 plate=Pos(0,silver_panel_center_y,0)*extrude(RectangleRounded(silver_panel_width,silver_panel_height,silver_panel_corner_radius),amount=t)
 for sign in [-1,1]:
     rw=silver_panel_width/2-silver_panel_rear_relief_x
-    plate-=Pos(sign*(silver_panel_rear_relief_x+rw/2),silver_panel_center_y,0)*Box(rw,silver_panel_height,silver_panel_rear_relief_depth,align=(Align.CENTER,Align.CENTER,Align.MIN))
+    plate-=Pos(sign*(silver_panel_rear_relief_x+rw/2),silver_panel_center_y-silver_panel_rear_relief_top_lip/2,0)*Box(rw,silver_panel_height-silver_panel_rear_relief_top_lip,silver_panel_rear_relief_depth,align=(Align.CENTER,Align.CENTER,Align.MIN))
 for x in [-silver_panel_pin_half_pitch,silver_panel_pin_half_pitch]:
     for y in [silver_panel_pin_lower_y,silver_panel_pin_upper_y]:
         plate+=Pos(x,y,-silver_panel_pin_length)*Cylinder(silver_panel_pin_diameter/2,silver_panel_pin_length,align=(Align.CENTER,Align.CENTER,Align.MIN))

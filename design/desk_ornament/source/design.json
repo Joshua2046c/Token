@@ -26,7 +26,7 @@
           "target": "silver_panel",
           "order": 0,
           "path": "design/desk_ornament/source/parts/silver_panel/000-silver_panel.py",
-          "sha256": "0cd567482e0172ee9c8967c73db2f1ab08efc99e6230c399248e1e9dea4d3525"
+          "sha256": "5b37de751dc1e79d30ff13a652000205638d9c3758a8319016922715e320b074"
         }
       ],
       "dependencies": []
@@ -40,7 +40,7 @@
           "target": "pull_handle",
           "order": 0,
           "path": "design/desk_ornament/source/parts/pull_handle/000-pull_handle.py",
-          "sha256": "7bf73536b6b93c771bf43be106dd668cf5c7bf6cb76f2a7941840479f6797ddf"
+          "sha256": "efa759efe542946caeb903276c58f7457ce7a71f9d238d540a12997a8efaa904"
         }
       ],
       "dependencies": []
@@ -94,7 +94,7 @@
       "label": "固定Logo面板",
       "material": "pla",
       "kind": "generated",
-      "shapeHash": "0d034ff9debca82bdb72eeaa267a8b4e4c4f142d0d2b6f1edef37ba03ff9ca7f",
+      "shapeHash": "ddad9e640071b4e7d6b7210d078fd0f24b4348841df34bab0b8541ee8d53e238",
       "transform": {
         "positionMm": [
           0,
@@ -121,7 +121,7 @@
       "label": "银色下拉柄",
       "material": "pla",
       "kind": "generated",
-      "shapeHash": "cb066c1d9809cd9be530e28ccbb2266f52ef19a360c712f54eb964162d3dcc2b",
+      "shapeHash": "01f742b7cb95bf9fb08ac02a9056c2e7858d1639e5bfe7177a492d38bb4a108f",
       "transform": {
         "positionMm": [
           0,
@@ -172,7 +172,7 @@
   ],
   "assets": [],
   "fits": [],
-  "updatedAt": "2026-09-30T17:30:30.228Z",
+  "updatedAt": "2026-09-30T17:38:18.346Z",
   "parameters": {
     "black_stand": {
       "black_stand_width": 118,
@@ -230,14 +230,15 @@
       "silver_panel_logo_y": 32,
       "silver_panel_center_y": 32.2,
       "silver_panel_rear_relief_x": 50.8,
-      "silver_panel_rear_relief_depth": 2.8
+      "silver_panel_rear_relief_depth": 2.8,
+      "silver_panel_rear_relief_top_lip": 1.6
     },
     "pull_handle": {
       "pull_handle_width": 120,
       "pull_handle_height": 150,
       "pull_handle_thickness": 18,
       "pull_handle_top_radius": 2,
-      "pull_handle_bottom_radius": 5,
+      "pull_handle_bottom_radius": 12,
       "pull_handle_opening_width": 110,
       "pull_handle_window_height": 38,
       "pull_handle_window_y": -50,
@@ -252,7 +253,8 @@
       "pull_handle_guide_head_thickness": 2.5,
       "pull_handle_guide_neck_front_z": 1,
       "pull_handle_wing_back_z": 0.4,
-      "pull_handle_wing_thickness": 2
+      "pull_handle_wing_thickness": 2,
+      "pull_handle_window_radius": 6
     },
     "top_cover": {
       "top_cover_width": 118,
