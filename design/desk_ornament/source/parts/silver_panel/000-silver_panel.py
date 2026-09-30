@@ -1,18 +1,19 @@
+# cell: silver_panel
 
-silver_panel_width = param("silver_panel_width", 96.0)
+silver_panel_width = param("silver_panel_width", 120)
 silver_panel_height = param("silver_panel_height", 150.0)
-silver_panel_thickness = param("silver_panel_thickness", 3.2)
+silver_panel_thickness = param("silver_panel_thickness", 8)
 silver_panel_corner_radius = param("silver_panel_corner_radius", 2.0)
-silver_panel_window_width = param("silver_panel_window_width", 86.0)
+silver_panel_window_width = param("silver_panel_window_width", 110)
 silver_panel_window_height = param("silver_panel_window_height", 34.0)
 silver_panel_window_radius = param("silver_panel_window_radius", 5.0)
 silver_panel_window_y = param("silver_panel_window_y", -48.0)
-silver_panel_band_width = param("silver_panel_band_width", 90.0)
+silver_panel_band_width = param("silver_panel_band_width", 114)
 silver_panel_band_height = param("silver_panel_band_height", 10.0)
 silver_panel_band_y = param("silver_panel_band_y", -16.0)
 silver_panel_pin_diameter = param("silver_panel_pin_diameter", 4.0)
 silver_panel_pin_length = param("silver_panel_pin_length", 3.0)
-silver_panel_pin_half_pitch = param("silver_panel_pin_half_pitch", 35.0)
+silver_panel_pin_half_pitch = param("silver_panel_pin_half_pitch", 45)
 silver_panel_pin_upper_y = param("silver_panel_pin_upper_y", 55.0)
 silver_panel_pin_lower_y = param("silver_panel_pin_lower_y", -69.0)
 silver_panel_logo_width = param("silver_panel_logo_width", 32.0)
@@ -44,10 +45,12 @@ assert len(logo.wires())==8
 plate=plate-cut
 assert len(plate.solids())==1
 assert plate.is_valid
-# Assembly frame: Pos(0,-4,165)*Rot(90,0,0); both body centroids are inside the base.
+# Centroid projected using this revision's assembly placement.
+from math import sin, cos, radians
 c=plate.center(CenterOf.MASS)
-assert abs(c.X)<46
-assert -22<(-4-c.Z)<43
+assert abs(c.X)<58
+world_center_y=29.724115975966416+c.Y*sin(radians(12))-c.Z*cos(radians(12))
+assert -22<world_center_y<53
 plate.color=Color(0.75,0.77,0.80)
 publish("silver_panel",plate,"银色面板",material="pla")
 print("Silver panel volume and local center",plate.volume,plate.center(CenterOf.MASS))

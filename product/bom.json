@@ -2,7 +2,7 @@
   "schema_version": 1,
   "status": "ready",
   "bom_ready": true,
-  "requirements_digest": "d41bb38734eef8a4ef444eded82959d2c5bca33e45953b4b2c85d9d8f5dcd0ca",
+  "requirements_digest": "39d5de9ae772a9f926794e1a2e74facfbdb0e71c85acf7d2ec0d8daec46a7329",
   "items": [
     {
       "id": "silver_panel",
@@ -11,9 +11,9 @@
       "source": "default",
       "material": "PLA，银色",
       "dimensions_mm": {
-        "width": 96,
+        "width": 120,
         "height": 150,
-        "plate_thickness": 3.2
+        "plate_thickness": 8
       }
     },
     {
@@ -23,11 +23,12 @@
       "source": "default",
       "material": "PLA，黑色",
       "dimensions_mm": {
-        "width": 100,
-        "depth": 85,
+        "width": 124,
+        "depth": 95,
         "height": 240,
-        "back_width": 94,
-        "back_thickness": 8
+        "back_width": 118,
+        "back_thickness": 8,
+        "backward_tilt_deg": 12
       }
     },
     {

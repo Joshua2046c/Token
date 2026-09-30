@@ -2,9 +2,9 @@
   "units": "mm",
   "source": "default",
   "overall_envelope": {
-    "width": 100,
-    "depth": 85,
-    "height": 240
+    "width": 124,
+    "depth": 95,
+    "height": 242
   },
   "parts": [
     {
@@ -14,9 +14,9 @@
       "source": "default",
       "material": "PLA，银色",
       "dimensions_mm": {
-        "width": 96,
+        "width": 120,
         "height": 150,
-        "plate_thickness": 3.2
+        "plate_thickness": 8
       }
     },
     {
@@ -26,11 +26,12 @@
       "source": "default",
       "material": "PLA，黑色",
       "dimensions_mm": {
-        "width": 100,
-        "depth": 85,
+        "width": 124,
+        "depth": 95,
         "height": 240,
-        "back_width": 94,
-        "back_thickness": 8
+        "back_width": 118,
+        "back_thickness": 8,
+        "backward_tilt_deg": 12
       }
     }
   ],
@@ -46,19 +47,19 @@
       "adhesive_gap": 0.2,
       "pin_centers_panel_local_xy": [
         [
-          -35,
+          -45,
           55
         ],
         [
-          35,
+          45,
           55
         ],
         [
-          -35,
+          -45,
           -69
         ],
         [
-          35,
+          45,
           -69
         ]
       ]
@@ -72,12 +73,30 @@
     {
       "id": "desktop_contact",
       "support_bounds_xy": [
-        -50,
-        50,
+        -62,
+        62,
         -32,
-        53
+        63
       ]
     }
   ],
-  "electronics": null
+  "electronics": null,
+  "assembly": {
+    "backward_tilt_deg": 12,
+    "silver_panel_position_mm": [
+      0,
+      29.724115975966424,
+      166.68051228312814
+    ],
+    "silver_panel_rotation_deg": [
+      78,
+      0,
+      0
+    ],
+    "socket_centers_world_z": [
+      220.4370479853239,
+      99.14674549433198
+    ],
+    "socket_half_pitch": 45
+  }
 }

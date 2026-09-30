@@ -12,7 +12,7 @@
           "target": "black_stand",
           "order": 0,
           "path": "design/desk_ornament/source/parts/black_stand/000-black_stand.py",
-          "sha256": "7813a806ebd716f2bdcb171afa5646a5cf267afe4433a72ac3dc945383dcbb7b"
+          "sha256": "5492e6f64c4d5304da3aedefe6cb35f51194a262f6b33d6d7801732c23ed5913"
         }
       ],
       "dependencies": []
@@ -26,7 +26,7 @@
           "target": "silver_panel",
           "order": 0,
           "path": "design/desk_ornament/source/parts/silver_panel/000-silver_panel.py",
-          "sha256": "646fd6fc85d7d8d33c092820b3895053e9268589435ca1c9de2769c125fe871b"
+          "sha256": "243f594ea081bee13968046c704d74425480959c4b165372fd397d7cedd8cc42"
         }
       ],
       "dependencies": []
@@ -39,7 +39,7 @@
       "label": "黑色支架底座",
       "material": "pla",
       "kind": "generated",
-      "shapeHash": "8356d7c0da6f9480bee57c17266df9046953bb0991025ec28df41f12de6561b7",
+      "shapeHash": "a1288a89f439fe6dc882e3e0d89a13b2439b286c5b902475a5375ca4cc852b7c",
       "transform": {
         "positionMm": [
           0,
@@ -66,15 +66,15 @@
       "label": "银色面板",
       "material": "pla",
       "kind": "generated",
-      "shapeHash": "c745df021cf07eb2ff902f54176e0f2896ba5f5ab41aa84bf3e9cfcaaafb3599",
+      "shapeHash": "6e6388267079fb0815d2191227f77f8bf4ed2deaaef10bb88ee73be123f19751",
       "transform": {
         "positionMm": [
           0,
-          -4,
-          165
+          29.724115975966416,
+          166.68051228312814
         ],
         "rotationDeg": [
-          90,
+          78,
           0,
           0
         ],
@@ -90,42 +90,43 @@
   ],
   "assets": [],
   "fits": [],
-  "updatedAt": "2026-09-30T15:02:44.317Z",
+  "updatedAt": "2026-09-30T15:11:50.707Z",
   "parameters": {
     "black_stand": {
-      "black_stand_width": 94,
+      "black_stand_width": 118,
       "black_stand_height": 240,
       "black_stand_thickness": 8,
-      "black_stand_base_width": 100,
-      "black_stand_base_depth": 85,
+      "black_stand_base_width": 124,
+      "black_stand_base_depth": 95,
       "black_stand_base_thickness": 8,
       "black_stand_base_front": 32,
       "black_stand_base_radius": 4,
       "black_stand_front_y": -3.8,
       "black_stand_flare_height": 38,
       "black_stand_rear_brace_height": 50,
-      "black_stand_rear_brace_reach": 28,
+      "black_stand_rear_brace_reach": 38,
       "black_stand_socket_diameter": 4.6,
       "black_stand_socket_depth": 3.4,
-      "black_stand_socket_half_pitch": 35,
-      "black_stand_socket_upper_z": 220,
-      "black_stand_socket_lower_z": 96
+      "black_stand_socket_half_pitch": 45,
+      "black_stand_socket_upper_z": 220.4370479853239,
+      "black_stand_socket_lower_z": 99.14674549433198,
+      "black_stand_tilt_deg": 12
     },
     "silver_panel": {
-      "silver_panel_width": 96,
+      "silver_panel_width": 120,
       "silver_panel_height": 150,
-      "silver_panel_thickness": 3.2,
+      "silver_panel_thickness": 8,
       "silver_panel_corner_radius": 2,
-      "silver_panel_window_width": 86,
+      "silver_panel_window_width": 110,
       "silver_panel_window_height": 34,
       "silver_panel_window_radius": 5,
       "silver_panel_window_y": -48,
-      "silver_panel_band_width": 90,
+      "silver_panel_band_width": 114,
       "silver_panel_band_height": 10,
       "silver_panel_band_y": -16,
       "silver_panel_pin_diameter": 4,
       "silver_panel_pin_length": 3,
-      "silver_panel_pin_half_pitch": 35,
+      "silver_panel_pin_half_pitch": 45,
       "silver_panel_pin_upper_y": 55,
       "silver_panel_pin_lower_y": -69,
       "silver_panel_logo_width": 32,

@@ -44,6 +44,24 @@
       "source": "user_requested",
       "description": "银色正面 Logo 的轮廓、朝向和镂空关系依据",
       "path": "product/references/uploads/20260930T145159368Z-3-ishot-2026-09-30-10-50-10.png"
+    },
+    {
+      "id": "correction_side",
+      "source": "user_requested",
+      "description": "用户补充侧面参考，要求银色更厚、支架带倾角",
+      "path": "product/references/uploads/20260930T150547805Z-1-ishot-2026-09-30-10-49-15.png"
+    },
+    {
+      "id": "correction_lifted",
+      "source": "user_requested",
+      "description": "用户补充抬起姿态参考，用于判断银色侧边厚度；不以手持角度测定落地倾角",
+      "path": "product/references/uploads/20260930T150547805Z-2-ishot-2026-09-30-10-49-34.png"
+    },
+    {
+      "id": "correction_front",
+      "source": "user_requested",
+      "description": "用户补充正面宽度与人手比例参考",
+      "path": "product/references/uploads/20260930T150547805Z-3-ishot-2026-09-30-10-48-51.png"
     }
   ],
   "assembly_story": {
@@ -72,7 +90,10 @@
         "reference_ids": [
           "reference_1",
           "reference_2",
-          "reference_3"
+          "reference_3",
+          "correction_side",
+          "correction_lifted",
+          "correction_front"
         ]
       }
     ]
