@@ -1,0 +1,81 @@
+{
+  "version": 2,
+  "artifact_level": "assembly",
+  "deliverable_intent": "printable_part",
+  "summary": "参考图造型的银黑分件桌面摆件，银色正面采用用户图 3 Logo。",
+  "required_interfaces": [
+    {
+      "id": "silver_black_join",
+      "kind": "mechanical_mating",
+      "description": "银色前面板与黑色支架分别制作，背面定位胶接；拼接边与合理装配间隙需在 CAD 验证",
+      "source": "user_requested",
+      "required": true
+    },
+    {
+      "id": "logo_face",
+      "kind": "surface_feature",
+      "description": "图 3 的 Logo 位于银色上部正面中心，默认宽 32 mm、凹深 0.6 mm 后填黑",
+      "source": "user_requested",
+      "required": true
+    },
+    {
+      "id": "desktop_contact",
+      "kind": "support",
+      "description": "黑色底座以平整底面支撑摆件独立站立于桌面",
+      "source": "experience_pack_recommendation",
+      "required": true
+    }
+  ],
+  "external_references": [
+    {
+      "id": "reference_1",
+      "source": "user_requested",
+      "description": "正面造型参考；无尺寸标注",
+      "path": "product/references/uploads/20260930T145159368Z-1-ishot-2026-09-30-10-48-51.png"
+    },
+    {
+      "id": "reference_2",
+      "source": "user_requested",
+      "description": "侧面与桌面放置姿态参考；不可据此推定内部机构",
+      "path": "product/references/uploads/20260930T145159368Z-2-ishot-2026-09-30-10-49-15.png"
+    },
+    {
+      "id": "reference_3",
+      "source": "user_requested",
+      "description": "银色正面 Logo 的轮廓、朝向和镂空关系依据",
+      "path": "product/references/uploads/20260930T145159368Z-3-ishot-2026-09-30-10-50-10.png"
+    }
+  ],
+  "assembly_story": {
+    "installation": "银色前面板与黑色支架独立制作，背面定位并胶接；放置在桌面。",
+    "maintenance": "擦拭清洁；默认胶接装配，不要求无损频繁拆卸。",
+    "user_access": [
+      "正面 Logo 和银黑分件外观"
+    ]
+  },
+  "cad": {
+    "requirement": "required",
+    "designs": [
+      {
+        "role": "desk_ornament",
+        "design_id": "desk_ornament",
+        "description": "含银色前面板和黑色支架底座两个主要独立实体的摆件装配",
+        "delivery_target": "printable_part",
+        "required_formats": [
+          "step"
+        ],
+        "interface_ids": [
+          "silver_black_join",
+          "logo_face",
+          "desktop_contact"
+        ],
+        "reference_ids": [
+          "reference_1",
+          "reference_2",
+          "reference_3"
+        ]
+      }
+    ]
+  },
+  "open_questions": []
+}

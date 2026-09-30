@@ -1,0 +1,91 @@
+{
+  "requirements": {
+    "product_class": {
+      "value": "mechanical",
+      "source": "default"
+    },
+    "product_purpose": {
+      "value": "参考图造型的桌边摆件",
+      "source": "user"
+    },
+    "appearance_reference": {
+      "value": [
+        "reference_1",
+        "reference_2"
+      ],
+      "source": "user"
+    },
+    "color_separation": {
+      "value": "银色部分与黑色部分必须为独立实体、可分别制作后装配",
+      "source": "user"
+    },
+    "front_logo": {
+      "value": {
+        "reference": "reference_3",
+        "location": "银色部分正面"
+      },
+      "source": "user"
+    },
+    "reference_interpretation": {
+      "value": "上部银色矩形正面，中部银色横向框口配黑色内衬，下部黑色立柱连接展开的底座",
+      "source": "research"
+    },
+    "overall_envelope_mm": {
+      "value": {
+        "width": 100,
+        "depth": 100,
+        "height": 220
+      },
+      "source": "default"
+    },
+    "placement": {
+      "value": "桌面独立站立，靠近桌边摆放；不设置桌板夹具",
+      "source": "default"
+    },
+    "function": {
+      "value": "固定姿态的纯装饰摆件",
+      "source": "default"
+    },
+    "base_board": {
+      "value": "不适用：默认纯机械，无电路、供电或接线",
+      "source": "default"
+    },
+    "manufacturing_method": {
+      "value": "FDM 分件制作；银色面板和黑色支架可采用对应颜色材料或表面涂装",
+      "source": "default"
+    },
+    "main_parts": {
+      "value": [
+        "银色一体前面板与框口",
+        "黑色背部支架、框口内衬与底座"
+      ],
+      "source": "default"
+    },
+    "assembly_method": {
+      "value": "背面隐藏定位结构配胶接，正面不露紧固件；具体结构由 CAD 阶段确定",
+      "source": "default"
+    },
+    "logo_treatment": {
+      "value": {
+        "width_mm": 32,
+        "recess_depth_mm": 0.6,
+        "finish": "浅凹刻填黑",
+        "position": "上部银色完整面板区域中心",
+        "shape": "按图 3 保留六重交织轮廓、中心六边形空白与原图朝向"
+      },
+      "source": "default"
+    },
+    "acceptance_criteria": {
+      "value": [
+        "装配正面和侧面保留参考图的主要比例与层次",
+        "银色与黑色为独立可制作的主实体",
+        "正面 Logo 使用图 3 图案且非文字或近似符号",
+        "尺寸由参数驱动，默认外包络不超过 100 × 100 × 220 mm",
+        "底座平整，CAD 阶段评估重心投影在支撑范围内，实际稳定性由实物验证",
+        "完成 CAD 时检查装配干涉并导出相同版本 STEP"
+      ],
+      "source": "default"
+    }
+  },
+  "open_questions": []
+}
