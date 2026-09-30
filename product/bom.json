@@ -2,7 +2,7 @@
   "schema_version": 1,
   "status": "ready",
   "bom_ready": true,
-  "requirements_digest": "39d5de9ae772a9f926794e1a2e74facfbdb0e71c85acf7d2ec0d8daec46a7329",
+  "requirements_digest": "f21226bd3b4bf5049d9d69f84f38795d6b9ea366d05dc7987e5c4981d5e62746",
   "items": [
     {
       "id": "silver_panel",
@@ -13,7 +13,7 @@
       "dimensions_mm": {
         "width": 120,
         "height": 150,
-        "plate_thickness": 8
+        "plate_thickness": 12
       }
     },
     {
@@ -28,7 +28,10 @@
         "height": 240,
         "back_width": 118,
         "back_thickness": 8,
-        "backward_tilt_deg": 12
+        "backward_tilt_deg": 12,
+        "front_transition_top_z": 14,
+        "rear_transition_top_z": 50,
+        "rear_toe_y": 38
       }
     },
     {

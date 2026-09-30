@@ -1,5 +1,3 @@
-# cell: black_stand
-# cell: black_stand
 
 black_stand_width = param("black_stand_width", 118)
 black_stand_height = param("black_stand_height", 240.0)
@@ -10,7 +8,7 @@ black_stand_base_thickness = param("black_stand_base_thickness", 8.0)
 black_stand_base_front = param("black_stand_base_front", 32.0)
 black_stand_base_radius = param("black_stand_base_radius", 4.0)
 black_stand_front_y = param("black_stand_front_y", -3.8)
-black_stand_flare_height = param("black_stand_flare_height", 38.0)
+black_stand_flare_height = param("black_stand_flare_height", 14.0)
 black_stand_rear_brace_height = param("black_stand_rear_brace_height", 50.0)
 black_stand_rear_brace_reach = param("black_stand_rear_brace_reach", 38)
 black_stand_socket_diameter = param("black_stand_socket_diameter", 4.6)
@@ -35,8 +33,30 @@ def front_y(z):
 top_y=front_y(h)
 top_back=(top_y+black_stand_thickness*cos(a),h-black_stand_thickness*sin(a))
 rear_y=front_y(black_stand_rear_brace_height)+black_stand_thickness/cos(a)
-# The front flare and rear brace remain fused into the level sole.
-side=Plane.YZ*Polygon((front,ft*0.75),(front,ft),(front*0.69,ft*1.4),(front*0.38,black_stand_flare_height*0.53),(front_y(black_stand_flare_height),black_stand_flare_height),(top_y,h),top_back,(rear_y,black_stand_rear_brace_height),(black_stand_rear_brace_reach,ft),(black_stand_rear_brace_reach,ft*0.75),align=None)
+# Front: a small circular blend tangent to the sole and inclined face.
+front_radius=(black_stand_flare_height-ft)/(1-sin(a))
+front_center=(fy-(black_stand_flare_height-ft)/cos(a),ft+front_radius)
+front_foot=(front_center[0],ft)
+front_tangent=(front_y(black_stand_flare_height),black_stand_flare_height)
+mid_angle=(-90-black_stand_tilt_deg)/2
+front_mid=(front_center[0]+front_radius*cos(radians(mid_angle)),front_center[1]+front_radius*sin(radians(mid_angle)))
+# Rear: a smooth cubic blend; both end tangents match the straight adjoining faces.
+rear_top=(rear_y,black_stand_rear_brace_height)
+rear_foot=(black_stand_rear_brace_reach,ft)
+rear_drop=black_stand_rear_brace_height-ft
+rear_run=black_stand_rear_brace_reach-rear_y
+assert rear_drop>0 and rear_run>0
+assert front_foot[0]>front
+assert black_stand_rear_brace_reach<black_stand_base_depth-black_stand_base_front
+rear_control1=(rear_top[0]-0.55*rear_drop*tan(a),rear_top[1]-0.55*rear_drop)
+rear_control2=(rear_foot[0]-0.55*rear_run,ft)
+with BuildLine(Plane.YZ) as side_outline:
+    Polyline((front,ft*0.75),(front,ft),front_foot)
+    ThreePointArc(front_foot,front_mid,front_tangent)
+    Polyline(front_tangent,(top_y,h),top_back,rear_top)
+    Bezier(rear_top,rear_control1,rear_control2,rear_foot)
+    Polyline(rear_foot,(black_stand_rear_brace_reach,ft*0.75),(front,ft*0.75))
+side=Face(Wire(side_outline.edges()))
 body=base+Pos(-w/2,0,0)*extrude(side,amount=w,dir=(1,0,0))
 for x in [-black_stand_socket_half_pitch,black_stand_socket_half_pitch]:
     for z in [black_stand_socket_lower_z,black_stand_socket_upper_z]:

@@ -62,6 +62,12 @@
       "source": "user_requested",
       "description": "用户补充正面宽度与人手比例参考",
       "path": "product/references/uploads/20260930T150547805Z-3-ishot-2026-09-30-10-48-51.png"
+    },
+    {
+      "id": "base_curve_markup",
+      "source": "user_requested",
+      "description": "用户红线标注：银色厚度乘1.5、黑色后侧圆弧过渡、前侧只在底部小过渡",
+      "path": "product/references/uploads/20260930T151811023Z-1-mark.png"
     }
   ],
   "assembly_story": {
@@ -93,7 +99,8 @@
           "reference_3",
           "correction_side",
           "correction_lifted",
-          "correction_front"
+          "correction_front",
+          "base_curve_markup"
         ]
       }
     ]

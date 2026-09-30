@@ -14,7 +14,8 @@
         "reference_2",
         "correction_side",
         "correction_lifted",
-        "correction_front"
+        "correction_front",
+        "base_curve_markup"
       ],
       "source": "user"
     },
@@ -37,7 +38,7 @@
       "value": {
         "width": 124,
         "depth": 95,
-        "height": 242
+        "height": 243
       },
       "source": "default"
     },
@@ -80,10 +81,10 @@
     },
     "acceptance_criteria": {
       "value": [
-        "正面更宽，银色侧面更厚，黑色支架按参考图形成明显倾角",
+        "银色厚度12 mm；后倾支架的后侧为连续圆滑过渡，前侧过渡限制在底部",
         "银色与黑色为独立可制作的主实体",
         "正面 Logo 使用图 3 图案且非文字或近似符号",
-        "尺寸与倾角可调；默认包络不超过124 × 95 × 242 mm，实际高度以CAD测量为准",
+        "尺寸与倾角可调；默认包络不超过124 × 95 × 243 mm，实际高度以CAD测量为准",
         "底座平整，CAD 阶段评估重心投影在支撑范围内，实际稳定性由实物验证",
         "完成 CAD 时检查装配干涉并导出相同版本 STEP"
       ],
@@ -98,7 +99,7 @@
       "source": "user"
     },
     "silver_thickness_correction": {
-      "value": "银色部分侧面应明显加厚",
+      "value": "银色部分在8 mm基础上加厚至1.5倍，即12 mm",
       "source": "user"
     },
     "black_stand_inclination": {
@@ -109,12 +110,28 @@
       "value": {
         "width": 120,
         "height": 150,
-        "thickness": 8
+        "thickness": 12
       },
       "source": "default"
     },
     "backward_tilt_deg": {
       "value": 12,
+      "source": "default"
+    },
+    "silver_panel_thickness_mm": {
+      "value": 12,
+      "source": "user"
+    },
+    "base_transition_shape": {
+      "value": "黑色底座后半部分为圆弧过渡；前半部分仅在底部做小范围过渡，按标注图",
+      "source": "user"
+    },
+    "base_transition_dimensions_mm": {
+      "value": {
+        "front_transition_top_z": 14,
+        "rear_transition_top_z": 50,
+        "rear_toe_y": 38
+      },
       "source": "default"
     }
   },

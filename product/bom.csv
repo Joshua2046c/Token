@@ -1,5 +1,5 @@
 id,name,quantity,source,material,dimensions_mm,interface
-silver_panel,银色前面板及一体框口（本项目定制）,1,default,PLA，银色,"{""width"": 120, ""height"": 150, ""plate_thickness"": 8}",
-black_stand,黑色背板与一体底座（本项目定制）,1,default,PLA，黑色,"{""width"": 124, ""depth"": 95, ""height"": 240, ""back_width"": 118, ""back_thickness"": 8, ""backward_tilt_deg"": 12}",
+silver_panel,银色前面板及一体框口（本项目定制）,1,default,PLA，银色,"{""width"": 120, ""height"": 150, ""plate_thickness"": 12}",
+black_stand,黑色背板与一体底座（本项目定制）,1,default,PLA，黑色,"{""width"": 124, ""depth"": 95, ""height"": 240, ""back_width"": 118, ""back_thickness"": 8, ""backward_tilt_deg"": 12, ""front_transition_top_z"": 14, ""rear_transition_top_z"": 50, ""rear_toe_y"": 38}",
 adhesive,适用于 PLA 的双组分环氧胶（小包装）,1,default,,{},0.2 mm 胶层；用于背面定位柱与面板，使用前确认包装标明适配所选塑料
 logo_finish,黑色模型填色漆（小包装）,1,default,,{},填入 0.6 mm 深 Logo 凹槽；涂装前在同种材料边角试涂

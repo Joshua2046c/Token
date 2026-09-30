@@ -4,7 +4,7 @@
   "overall_envelope": {
     "width": 124,
     "depth": 95,
-    "height": 242
+    "height": 243
   },
   "parts": [
     {
@@ -16,7 +16,7 @@
       "dimensions_mm": {
         "width": 120,
         "height": 150,
-        "plate_thickness": 8
+        "plate_thickness": 12
       }
     },
     {
@@ -31,7 +31,10 @@
         "height": 240,
         "back_width": 118,
         "back_thickness": 8,
-        "backward_tilt_deg": 12
+        "backward_tilt_deg": 12,
+        "front_transition_top_z": 14,
+        "rear_transition_top_z": 50,
+        "rear_toe_y": 38
       }
     }
   ],
@@ -98,5 +101,10 @@
       99.14674549433198
     ],
     "socket_half_pitch": 45
+  },
+  "base_profile": {
+    "front": "small tangent circular blend ending at z14 mm",
+    "rear": "smooth cubic Bezier blend tangent to inclined back and sole, from z50 to toe y38 mm",
+    "source": "default"
   }
 }
