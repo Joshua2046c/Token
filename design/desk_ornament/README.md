@@ -4,7 +4,7 @@
 
 ## 分件与尺寸
 
-四个独立有效实体：black_stand 为黑色导向支架底座；silver_panel 为固定银色Logo面板；pull_handle 为银色U形下拉柄；top_cover 为一块黑色顶部防脱盖板。均按PLA记录颜色。总体包络124 × 95 × 243.784 mm；照片比例不是尺度测量。
+四个独立有效实体：black_stand 为黑色导向支架底座；silver_panel 为固定银色Logo面板；pull_handle 为银色U形下拉柄；top_cover 为一块黑色顶部防脱盖板。均按PLA记录颜色。总体包络124 × 125 × 243.784 mm；照片比例不是尺度测量。
 
 固定Logo面板宽109.2、高85.6、厚18 mm，中心局部y=32.2；顶部y=75，底部y=-10.6。顶部左右两角按square_top_corners_markup为直角R0，由silver_panel_top_corner_radius控制；下角仍由silver_panel_corner_radius控制，保持R2。拉柄宽120、高150、正面厚18 mm，背部导轨再伸出5.5 mm。大窗口110×38 mm，中心y=-50；按最新蓝圈照片改为下外角R12、窗口R6，底边6 mm。上部为开顶U形缺口，内宽110 mm，下沿y=-21，内角R2；闭合时与固定面板之间的可见横槽约10.4 mm，随下拉增大。侧条与固定面板单侧间隙0.4 mm。
 
@@ -22,11 +22,15 @@ handle_slide：两条导向位于面板局部x=±53。移动轨头宽6、颈宽3
 
 logo_face：图3直接轮廓提取，保留外轮廓、六个交织内孔和中心空白。宽32 mm、深0.6 mm，局部x=0、y=32。原图阈值128、简化1.2像素，32 mm宽时最大简化偏差约0.12 mm，不含原图抗锯齿与阈值误差。黑色为凹槽制作后填色，不增加Logo实体。
 
-desktop_contact：底座z=0，x范围±62、y范围-32..63 mm，四角R4。运动件投影仍在支撑范围内；填充率、胶层、打印翘曲和操作外力稳定性须实物验证。
+desktop_contact：底座z=0，x范围±62、y范围-32..93 mm，四角R4。运动件投影仍在支撑范围内；填充率、胶层、打印翘曲和操作外力稳定性须实物验证。
 
 ## 底座圆滑过渡
 
 前侧相切小圆弧z=8..14 mm，半径约7.575 mm，向前接平直底板；后侧从z=50 mm背面接至y=38、z=8 mm底板，以三次Bezier曲线定义，两端分别与背板及底板相切，不指定恒定圆半径。black_stand_flare_height、black_stand_rear_brace_height和black_stand_rear_brace_reach分别调整过渡高度和尾端位置。黑色顶部两角R2由独立盖板形成；支架裸件高237.848 mm，含盖板恢复至240 mm。
+
+## 底座后伸
+
+按rear_base_extension_markup，在后端增加30 mm，black_stand_base_depth由95变为125 mm。底座前缘y=-32不变，后缘y=93；厚8 mm、四角R4不变，后部Bezier根部仍结束于y=38。通过改变底座深度向后延长，未移动整机或改变倾角。该数值为按红线比例采用的默认值。
 
 ## 倾角调整
 

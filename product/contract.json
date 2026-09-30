@@ -117,6 +117,12 @@
       "source": "user_requested",
       "description": "固定银色主体顶部两角改为直角",
       "path": "product/references/uploads/20260930T173904638Z-1-mark.png"
+    },
+    {
+      "id": "rear_base_extension_markup",
+      "source": "user_requested",
+      "description": "底座后端向后延长，按红线比例默认增加30 mm",
+      "path": "product/references/uploads/20260930T174126040Z-1-mark.png"
     }
   ],
   "assembly_story": {
@@ -157,7 +163,8 @@
           "top_cover_markup",
           "top_notch_fill_markup",
           "handle_curve_reference",
-          "square_top_corners_markup"
+          "square_top_corners_markup",
+          "rear_base_extension_markup"
         ]
       }
     ]

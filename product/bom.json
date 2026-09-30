@@ -2,7 +2,7 @@
   "schema_version": 1,
   "status": "ready",
   "bom_ready": true,
-  "requirements_digest": "d6c0c1142135755d3b568f82f9e350ace8bdd065bc2ed2a20c2eae4bcc70ab2f",
+  "requirements_digest": "75d29afbac6bc743afe64d71e7addd61e60b16044cef33e2a1305636fe91dff4",
   "items": [
     {
       "id": "silver_panel",
@@ -53,7 +53,7 @@
       "material": "PLA，黑色",
       "dimensions_mm": {
         "width": 124,
-        "depth": 95,
+        "depth": 125,
         "height": 237.8480753783875,
         "back_width": 118,
         "back_thickness": 8,
@@ -69,7 +69,8 @@
         "stroke": 15,
         "height_with_top_cover": 240,
         "guide_lower_y": 18,
-        "cover_seat_y": 72.8
+        "cover_seat_y": 72.8,
+        "rear_edge_y": 93
       }
     },
     {

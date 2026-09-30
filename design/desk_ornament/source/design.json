@@ -67,7 +67,7 @@
       "label": "黑色支架底座",
       "material": "pla",
       "kind": "generated",
-      "shapeHash": "31d5e9dfadcf7b6cac984bdb68e21b744e5f4d743a0d308af930376ec52bec62",
+      "shapeHash": "6534385d3c1c221d952dcdb962c625a9dc8bacf21dd659747f9abd3fb09264f0",
       "transform": {
         "positionMm": [
           0,
@@ -172,14 +172,14 @@
   ],
   "assets": [],
   "fits": [],
-  "updatedAt": "2026-09-30T17:39:45.431Z",
+  "updatedAt": "2026-09-30T17:41:59.399Z",
   "parameters": {
     "black_stand": {
       "black_stand_width": 118,
       "black_stand_height": 240,
       "black_stand_thickness": 8,
       "black_stand_base_width": 124,
-      "black_stand_base_depth": 95,
+      "black_stand_base_depth": 125,
       "black_stand_base_thickness": 8,
       "black_stand_base_front": 32,
       "black_stand_base_radius": 4,
