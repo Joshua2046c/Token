@@ -2,7 +2,7 @@
   "schema_version": 1,
   "status": "ready",
   "bom_ready": true,
-  "requirements_digest": "84156e4099131c2a005e024f96a35232be01d512cc1fe8b465f64f4c005325b2",
+  "requirements_digest": "d6c0c1142135755d3b568f82f9e350ace8bdd065bc2ed2a20c2eae4bcc70ab2f",
   "items": [
     {
       "id": "silver_panel",
@@ -14,9 +14,10 @@
         "width": 109.2,
         "height": 85.6,
         "plate_thickness": 18,
-        "corner_radius": 2,
         "rear_side_relief_depth": 2.8,
-        "rear_relief_top_lip": 1.6
+        "rear_relief_top_lip": 1.6,
+        "top_corner_radius": 0,
+        "bottom_corner_radius": 2
       },
       "interface": "4根定位柱与黑色支架胶接；左右为活动拉柄保留0.4 mm侧缝"
     },

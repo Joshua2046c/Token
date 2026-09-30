@@ -15,8 +15,16 @@ silver_panel_logo_y=param("silver_panel_logo_y",32)
 silver_panel_rear_relief_x=param("silver_panel_rear_relief_x",50.8)
 silver_panel_rear_relief_depth=param("silver_panel_rear_relief_depth",2.8)
 silver_panel_rear_relief_top_lip=param("silver_panel_rear_relief_top_lip",1.6)
+silver_panel_top_corner_radius=param("silver_panel_top_corner_radius",0)
 t=silver_panel_thickness
-plate=Pos(0,silver_panel_center_y,0)*extrude(RectangleRounded(silver_panel_width,silver_panel_height,silver_panel_corner_radius),amount=t)
+plate=Pos(0,silver_panel_center_y,0)*extrude(Rectangle(silver_panel_width,silver_panel_height),amount=t)
+lower_edges=[e for e in plate.edges().filter_by(Axis.Z) if e.center().Y<silver_panel_center_y]
+assert len(lower_edges)==2
+plate=fillet(lower_edges,radius=silver_panel_corner_radius)
+if silver_panel_top_corner_radius>0:
+    upper_edges=[e for e in plate.edges().filter_by(Axis.Z) if e.center().Y>silver_panel_center_y]
+    assert len(upper_edges)==2
+    plate=fillet(upper_edges,radius=silver_panel_top_corner_radius)
 for sign in [-1,1]:
     rw=silver_panel_width/2-silver_panel_rear_relief_x
     plate-=Pos(sign*(silver_panel_rear_relief_x+rw/2),silver_panel_center_y-silver_panel_rear_relief_top_lip/2,0)*Box(rw,silver_panel_height-silver_panel_rear_relief_top_lip,silver_panel_rear_relief_depth,align=(Align.CENTER,Align.CENTER,Align.MIN))

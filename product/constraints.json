@@ -17,9 +17,10 @@
         "width": 109.2,
         "height": 85.6,
         "plate_thickness": 18,
-        "corner_radius": 2,
         "rear_side_relief_depth": 2.8,
-        "rear_relief_top_lip": 1.6
+        "rear_relief_top_lip": 1.6,
+        "top_corner_radius": 0,
+        "bottom_corner_radius": 2
       },
       "interface": "4根定位柱与黑色支架胶接；左右为活动拉柄保留0.4 mm侧缝"
     },
@@ -220,7 +221,7 @@
   "corner_rounding": {
     "radius_mm": 2,
     "features": [
-      "fixed silver_panel outline",
+      "fixed silver_panel bottom corners",
       "pull_handle upper outer corners and upper notch corners",
       "top_cover top corners"
     ],
@@ -249,5 +250,9 @@
       2.8
     ],
     "clearance_to_moving_wing_at_closed": 0.4
+  },
+  "fixed_logo_top_corners": {
+    "radius_mm": 0,
+    "source": "user"
   }
 }

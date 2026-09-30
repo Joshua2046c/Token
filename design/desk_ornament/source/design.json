@@ -26,7 +26,7 @@
           "target": "silver_panel",
           "order": 0,
           "path": "design/desk_ornament/source/parts/silver_panel/000-silver_panel.py",
-          "sha256": "5b37de751dc1e79d30ff13a652000205638d9c3758a8319016922715e320b074"
+          "sha256": "3112c03cdf98ca191ed1559a1543d6fa9704345ee3f9e71c56a3a8518dc6537b"
         }
       ],
       "dependencies": []
@@ -94,7 +94,7 @@
       "label": "固定Logo面板",
       "material": "pla",
       "kind": "generated",
-      "shapeHash": "ddad9e640071b4e7d6b7210d078fd0f24b4348841df34bab0b8541ee8d53e238",
+      "shapeHash": "b10e4a4706da62fe4e89feb44ee209dab4515d5a5fcd3214d9fd8b6fbafd028b",
       "transform": {
         "positionMm": [
           0,
@@ -172,7 +172,7 @@
   ],
   "assets": [],
   "fits": [],
-  "updatedAt": "2026-09-30T17:38:18.346Z",
+  "updatedAt": "2026-09-30T17:39:45.431Z",
   "parameters": {
     "black_stand": {
       "black_stand_width": 118,
@@ -231,7 +231,8 @@
       "silver_panel_center_y": 32.2,
       "silver_panel_rear_relief_x": 50.8,
       "silver_panel_rear_relief_depth": 2.8,
-      "silver_panel_rear_relief_top_lip": 1.6
+      "silver_panel_rear_relief_top_lip": 1.6,
+      "silver_panel_top_corner_radius": 0
     },
     "pull_handle": {
       "pull_handle_width": 120,

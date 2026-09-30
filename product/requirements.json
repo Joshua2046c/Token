@@ -21,7 +21,8 @@
         "pull_handle_markup",
         "top_cover_markup",
         "top_notch_fill_markup",
-        "handle_curve_reference"
+        "handle_curve_reference",
+        "square_top_corners_markup"
       ],
       "source": "user"
     },
@@ -220,6 +221,10 @@
         "moving_wing_clearance": 0.4
       },
       "source": "default"
+    },
+    "fixed_logo_top_corners": {
+      "value": "固定银色Logo主体顶部左右两角改为直角，R0；按最新红圈标注",
+      "source": "user"
     }
   },
   "open_questions": []

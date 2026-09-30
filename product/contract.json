@@ -111,6 +111,12 @@
       "source": "user_requested",
       "description": "蓝圈照片：按手柄下半部内外圆弧形态细化轮廓",
       "path": "product/references/uploads/20260930T173416904Z-2-ishot-2026-10-01-1-32-58.png"
+    },
+    {
+      "id": "square_top_corners_markup",
+      "source": "user_requested",
+      "description": "固定银色主体顶部两角改为直角",
+      "path": "product/references/uploads/20260930T173904638Z-1-mark.png"
     }
   ],
   "assembly_story": {
@@ -150,7 +156,8 @@
           "pull_handle_markup",
           "top_cover_markup",
           "top_notch_fill_markup",
-          "handle_curve_reference"
+          "handle_curve_reference",
+          "square_top_corners_markup"
         ]
       }
     ]
