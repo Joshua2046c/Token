@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "status": "ready",
+  "bom_ready": true,
+  "requirements_digest": "d41bb38734eef8a4ef444eded82959d2c5bca33e45953b4b2c85d9d8f5dcd0ca",
+  "items": [
+    {
+      "id": "silver_panel",
+      "name": "银色前面板及一体框口（本项目定制）",
+      "quantity": 1,
+      "source": "default",
+      "material": "PLA，银色",
+      "dimensions_mm": {
+        "width": 96,
+        "height": 150,
+        "plate_thickness": 3.2
+      }
+    },
+    {
+      "id": "black_stand",
+      "name": "黑色背板与一体底座（本项目定制）",
+      "quantity": 1,
+      "source": "default",
+      "material": "PLA，黑色",
+      "dimensions_mm": {
+        "width": 100,
+        "depth": 85,
+        "height": 240,
+        "back_width": 94,
+        "back_thickness": 8
+      }
+    },
+    {
+      "id": "adhesive",
+      "name": "适用于 PLA 的双组分环氧胶（小包装）",
+      "quantity": 1,
+      "source": "default",
+      "procurement_status": "external_procurement_required",
+      "interface": "0.2 mm 胶层；用于背面定位柱与面板，使用前确认包装标明适配所选塑料"
+    },
+    {
+      "id": "logo_finish",
+      "name": "黑色模型填色漆（小包装）",
+      "quantity": 1,
+      "source": "default",
+      "procurement_status": "external_procurement_required",
+      "interface": "填入 0.6 mm 深 Logo 凹槽；涂装前在同种材料边角试涂"
+    }
+  ],
+  "unresolved_items": [],
+  "supply_risks": [
+    "胶与填色漆的品牌、价格和库存未查询；不影响几何接口。",
+    "照片比例为估算，打印和胶接强度尚未实物验证。"
+  ]
+}

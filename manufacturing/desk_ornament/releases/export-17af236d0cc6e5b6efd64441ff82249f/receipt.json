@@ -1,0 +1,117 @@
+{
+  "designId": "desk_ornament",
+  "revision": "0cb8d61a14670e5971704638c6e932ebc9dc30d906ac199d9139104c1c442014",
+  "schemaVersion": 2,
+  "exportId": "export-17af236d0cc6e5b6efd64441ff82249f",
+  "generatedAt": "2026-09-30T15:02:44.317Z",
+  "designSha256": "5bfbd607c2d9156e2c5736a9fddc9d69514d0ad9e248ddae00bd86c98f264922",
+  "role": "desk_ornament",
+  "stateHash": "2485573f98e3467ce0417467fed6502feba74b996e7833510d062102393c6c61",
+  "stateManifest": {
+    "schemaVersion": 3,
+    "designId": "desk_ornament",
+    "role": "desk_ornament",
+    "design": {
+      "revision": "0cb8d61a14670e5971704638c6e932ebc9dc30d906ac199d9139104c1c442014",
+      "designSha256": "a74699d0beb77110eca317b328c7c8b0a90eb31df7a4b59ef5952745bb0b5696",
+      "manifestSha256": "fdce731f77e428198063e220adf66df2d4b974e4edba09086e6b117bb699cf25",
+      "stepSha256": "068544f499f18f9346bb51402e1a5433a620d82819522a7972dd76ebdae5b38b",
+      "pcbReleases": []
+    },
+    "brief": {
+      "path": "design/desk_ornament/README.md",
+      "sha256": "5eb18312d65dbc976506954d0329d8a42ee1f013d4e4c09ba4362ce09c9ed86e"
+    },
+    "requirement": {
+      "artifactContractPath": "product/contract.json",
+      "artifactContractSha256": "e061a5e1ed57e56ee9991f60b35ea5d1c782c3eb4b9337d1cef7e19af8cefa75",
+      "designRequirementSha256": "45fffaccfe20d3422178e3923ed74dc34b59a39eb147b03a3a2a1e8bdcf326f8",
+      "inputs": [
+        {
+          "role": "external-reference",
+          "id": "reference_1",
+          "path": "product/references/uploads/20260930T145159368Z-1-ishot-2026-09-30-10-48-51.png",
+          "sha256": "b98f3904e6dcae54b7783f84e4c4c1f23c824ca488a8e617a418fdfb4ac8b8b7",
+          "sizeBytes": 168113
+        },
+        {
+          "role": "external-reference",
+          "id": "reference_2",
+          "path": "product/references/uploads/20260930T145159368Z-2-ishot-2026-09-30-10-49-15.png",
+          "sha256": "4cde3c06b94a2870c16e8a9651a91ce2c3e464a64350a2dcac2408f920692ad5",
+          "sizeBytes": 61606
+        },
+        {
+          "role": "external-reference",
+          "id": "reference_3",
+          "path": "product/references/uploads/20260930T145159368Z-3-ishot-2026-09-30-10-50-10.png",
+          "sha256": "c6d5a6e774b39e36c0b210f04dbeca6adc0d1a5cbb418434320b44cfd0b6abf3",
+          "sizeBytes": 89334
+        }
+      ]
+    },
+    "delivery": {
+      "target": "printable_part",
+      "formats": [
+        "step"
+      ]
+    },
+    "stateHash": "2485573f98e3467ce0417467fed6502feba74b996e7833510d062102393c6c61"
+  },
+  "buildArtifacts": {
+    "manifestSha256": "fdce731f77e428198063e220adf66df2d4b974e4edba09086e6b117bb699cf25",
+    "stepSha256": "068544f499f18f9346bb51402e1a5433a620d82819522a7972dd76ebdae5b38b"
+  },
+  "exportAlgorithm": {
+    "version": 1,
+    "bootstrapSha256": "ee3801d485ce9c36c94064620fc14c1fad29a20395abe3cd26ac51a72ac105d1"
+  },
+  "sourceHashes": {
+    "black_stand/black_stand": "7813a806ebd716f2bdcb171afa5646a5cf267afe4433a72ac3dc945383dcbb7b",
+    "silver_panel/silver_panel": "646fd6fc85d7d8d33c092820b3895053e9268589435ca1c9de2769c125fe871b"
+  },
+  "assetHashes": {},
+  "shapeHashes": {
+    "black_stand": "8356d7c0da6f9480bee57c17266df9046953bb0991025ec28df41f12de6561b7",
+    "silver_panel": "c745df021cf07eb2ff902f54176e0f2896ba5f5ab41aa84bf3e9cfcaaafb3599"
+  },
+  "runtime": {
+    "manifestHash": "1e67f7323582be77317b7a18cbf288bdd8fcf7386fc2dde7720aca1e1cc8aacc",
+    "pythonVersion": "3.12.13",
+    "build123dVersion": "0.10.0",
+    "ocpVersion": "7.8.1.1.post1",
+    "cadpyHash": "6b2d263b0eb225cd55b8fc84ab7d4c0f8546d2b08f04e7f81a0cbf2674a243fc"
+  },
+  "artifacts": [
+    {
+      "path": "manufacturing/desk_ornament/releases/export-17af236d0cc6e5b6efd64441ff82249f/model.step",
+      "role": "model/step",
+      "sha256": "068544f499f18f9346bb51402e1a5433a620d82819522a7972dd76ebdae5b38b",
+      "sizeBytes": 894233
+    }
+  ],
+  "interference": {
+    "summary": "No interference across 1 object pairs.",
+    "counts": {
+      "objects": 2,
+      "pairs": 1,
+      "exact": 0,
+      "cached": 1,
+      "interference": 0,
+      "undeclared": 0,
+      "over_budget": 0,
+      "undetermined": 0
+    },
+    "overlaps": []
+  },
+  "authority": {
+    "version": 1,
+    "algorithm": "hmac-sha256",
+    "keyId": "8f17cd8beacf64e15907a2301382c062",
+    "projectId": "4803d325-6142-429f-8386-ae42468e2fcf",
+    "receiptPath": "manufacturing/desk_ornament/releases/export-17af236d0cc6e5b6efd64441ff82249f/receipt.json",
+    "payloadSha256": "f2a19e4e2020e223c6db0df6531b086497062ee88e7f1b2b83d919f3c89b07a9",
+    "mac": "cf0f85912e6ab2de2ae0ff2b3981e3ef2a318012f4926123b9f3af4611c60733"
+  },
+  "status": "handoff"
+}

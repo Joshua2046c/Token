@@ -1,0 +1,83 @@
+{
+  "units": "mm",
+  "source": "default",
+  "overall_envelope": {
+    "width": 100,
+    "depth": 85,
+    "height": 240
+  },
+  "parts": [
+    {
+      "id": "silver_panel",
+      "name": "银色前面板及一体框口（本项目定制）",
+      "quantity": 1,
+      "source": "default",
+      "material": "PLA，银色",
+      "dimensions_mm": {
+        "width": 96,
+        "height": 150,
+        "plate_thickness": 3.2
+      }
+    },
+    {
+      "id": "black_stand",
+      "name": "黑色背板与一体底座（本项目定制）",
+      "quantity": 1,
+      "source": "default",
+      "material": "PLA，黑色",
+      "dimensions_mm": {
+        "width": 100,
+        "depth": 85,
+        "height": 240,
+        "back_width": 94,
+        "back_thickness": 8
+      }
+    }
+  ],
+  "interfaces": [
+    {
+      "id": "silver_black_join",
+      "implementation": "free",
+      "method": "four locating pins and adhesive",
+      "pin_diameter": 4,
+      "socket_diameter": 4.6,
+      "pin_length": 3,
+      "socket_depth": 3.4,
+      "adhesive_gap": 0.2,
+      "pin_centers_panel_local_xy": [
+        [
+          -35,
+          55
+        ],
+        [
+          35,
+          55
+        ],
+        [
+          -35,
+          -69
+        ],
+        [
+          35,
+          -69
+        ]
+      ]
+    },
+    {
+      "id": "logo_face",
+      "method": "recess from supplied raster contour",
+      "width": 32,
+      "depth": 0.6
+    },
+    {
+      "id": "desktop_contact",
+      "support_bounds_xy": [
+        -50,
+        50,
+        -32,
+        53
+      ]
+    }
+  ],
+  "electronics": null
+}
