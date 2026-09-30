@@ -2,7 +2,7 @@
   "schema_version": 1,
   "status": "ready",
   "bom_ready": true,
-  "requirements_digest": "d67b96f10401bf5dad83d3339b520cbbc23d0c6c9b2eddca8290cda2313f859c",
+  "requirements_digest": "8098f10f0ab13fe962487fad9eb75db124ebe2fe96549d6289f2a04f90a6afbe",
   "items": [
     {
       "id": "silver_panel",
@@ -37,7 +37,8 @@
         "lower_corner_radius": 5,
         "guide_length": 40,
         "guide_head_width": 6,
-        "guide_neck_width": 3
+        "guide_neck_width": 3,
+        "guide_center_y": 53
       },
       "interface": "从支架顶部插入双T形导槽；滑动面不涂胶"
     },
@@ -50,7 +51,7 @@
       "dimensions_mm": {
         "width": 124,
         "depth": 95,
-        "height": 240,
+        "height": 237.8480753783875,
         "back_width": 118,
         "back_thickness": 8,
         "backward_tilt_deg": 12,
@@ -62,22 +63,25 @@
         "guide_head_width": 6.6,
         "guide_neck_width": 3.6,
         "guide_depth": 5.6,
-        "stroke": 15
+        "stroke": 15,
+        "height_with_top_cover": 240,
+        "guide_lower_y": 18,
+        "cover_seat_y": 72.8
       }
     },
     {
-      "id": "guide_stops",
-      "name": "黑色T形导轨上限位塞（本项目定制，同形2件）",
-      "quantity": 2,
+      "id": "top_cover",
+      "name": "黑色顶部防脱盖板（本项目定制，单块）",
+      "quantity": 1,
       "source": "default",
       "material": "PLA，黑色",
       "dimensions_mm": {
-        "head_width": 6,
-        "neck_width": 3,
-        "length": 30,
-        "total_depth": 5
+        "width": 118,
+        "depth": 8,
+        "thickness": 2,
+        "top_corner_radius": 2
       },
-      "interface": "对应stop_left、stop_right；拉柄装入后胶接于导轨顶部，塞顶与支架顶齐平"
+      "interface": "盖板底面位于局部y=73，跨越两槽顶端；与支架留0.2 mm胶层，槽口区域不涂胶"
     },
     {
       "id": "adhesive",
@@ -85,7 +89,7 @@
       "quantity": 1,
       "source": "default",
       "procurement_status": "external_procurement_required",
-      "interface": "固定面板0.2 mm胶层；限位塞侧面0.3 mm胶缝；滑动面禁止涂胶，先试配"
+      "interface": "固定面板及顶部盖板0.2 mm胶层；导槽和活动轨面禁止涂胶，先试配"
     },
     {
       "id": "logo_finish",

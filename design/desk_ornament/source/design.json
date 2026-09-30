@@ -12,7 +12,7 @@
           "target": "black_stand",
           "order": 0,
           "path": "design/desk_ornament/source/parts/black_stand/000-black_stand.py",
-          "sha256": "a8483d33962009b032d5173033713b65815023ceaa021eab2518d7b79712e2d8"
+          "sha256": "45bc4360f9a7282ac549e1ab6e0dffaedbb83212319833f74f70541ae845f6b8"
         }
       ],
       "dependencies": []
@@ -46,29 +46,15 @@
       "dependencies": []
     },
     {
-      "id": "stop_left",
-      "label": "stop_left",
+      "id": "top_cover",
+      "label": "top_cover",
       "cells": [
         {
-          "id": "stop_left",
-          "target": "stop_left",
+          "id": "top_cover",
+          "target": "top_cover",
           "order": 0,
-          "path": "design/desk_ornament/source/parts/stop_left/000-stop_left.py",
-          "sha256": "e3ce35f22cec3ca7dcbffc68cf6a172db1b0c5042c6a6d48d8db8a089981d09f"
-        }
-      ],
-      "dependencies": []
-    },
-    {
-      "id": "stop_right",
-      "label": "stop_right",
-      "cells": [
-        {
-          "id": "stop_right",
-          "target": "stop_right",
-          "order": 0,
-          "path": "design/desk_ornament/source/parts/stop_right/000-stop_right.py",
-          "sha256": "a8daa4c8a916669dc51d236b3d1e0611989b4fb841047907482dac6a756e44c8"
+          "path": "design/desk_ornament/source/parts/top_cover/000-top_cover.py",
+          "sha256": "f758fd878a75ecd4561997cbbae684a01ba6584f4486b6384c4c3b44ee7e0520"
         }
       ],
       "dependencies": []
@@ -81,7 +67,7 @@
       "label": "黑色支架底座",
       "material": "pla",
       "kind": "generated",
-      "shapeHash": "517e773e01c47d127bd355859178134b9b5fd8c83e6ee1a0d397bfaa0d5a984c",
+      "shapeHash": "31d5e9dfadcf7b6cac984bdb68e21b744e5f4d743a0d308af930376ec52bec62",
       "transform": {
         "positionMm": [
           0,
@@ -135,12 +121,12 @@
       "label": "银色下拉柄",
       "material": "pla",
       "kind": "generated",
-      "shapeHash": "67a2212cfe14d6cfb958ca4ed4712fcfdded7b0ae1135458896088c2a7f5a089",
+      "shapeHash": "cb066c1d9809cd9be530e28ccbb2266f52ef19a360c712f54eb964162d3dcc2b",
       "transform": {
         "positionMm": [
           0,
-          26.605440613700026,
-          152.00829827212107
+          29.724115975966416,
+          166.68051228312814
         ],
         "rotationDeg": [
           78,
@@ -157,44 +143,17 @@
       "datums": []
     },
     {
-      "id": "stop_left",
-      "target": "stop_left",
-      "label": "导轨上限位塞",
+      "id": "top_cover",
+      "target": "top_cover",
+      "label": "顶部防脱盖板",
       "material": "pla",
       "kind": "generated",
-      "shapeHash": "b62a3f4997ac4e4044d622d68ab1d1e865d50961385b76a016cbdabb819f0f88",
+      "shapeHash": "3c66ed80398478a429bbe011f2b729939848f090db5a8ce9a057d49ac188a66a",
       "transform": {
         "positionMm": [
-          -53,
-          44.45995386680152,
-          209.5536400166517
-        ],
-        "rotationDeg": [
-          78,
           0,
-          0
-        ],
-        "rotationOrder": "XYZ",
-        "scale": [
-          1,
-          1,
-          1
-        ]
-      },
-      "datums": []
-    },
-    {
-      "id": "stop_right",
-      "target": "stop_right",
-      "label": "导轨上限位塞",
-      "material": "pla",
-      "kind": "generated",
-      "shapeHash": "5801a660a6de4aeaa03982ff72b146d626012c0b1b3e046ddabcf2ced3eba98c",
-      "transform": {
-        "positionMm": [
-          53,
-          44.45995386680152,
-          209.5536400166517
+          52.92247973168006,
+          236.3804112719903
         ],
         "rotationDeg": [
           78,
@@ -213,7 +172,7 @@
   ],
   "assets": [],
   "fits": [],
-  "updatedAt": "2026-09-30T17:23:50.311Z",
+  "updatedAt": "2026-09-30T17:30:30.228Z",
   "parameters": {
     "black_stand": {
       "black_stand_width": 118,
@@ -245,7 +204,8 @@
       "black_stand_guide_origin_y": 29.724115975966416,
       "black_stand_guide_origin_z": 166.68051228312814,
       "black_stand_guide_stroke": 15,
-      "black_stand_guide_parked_lower_y": 5
+      "black_stand_guide_parked_lower_y": 33,
+      "black_stand_cover_seat_y": 72.8
     },
     "silver_panel": {
       "silver_panel_width": 109.2,
@@ -285,7 +245,7 @@
       "pull_handle_notch_radius": 2,
       "pull_handle_guide_half_pitch": 53,
       "pull_handle_guide_length": 40,
-      "pull_handle_guide_center_y": 25,
+      "pull_handle_guide_center_y": 53,
       "pull_handle_guide_head_width": 6,
       "pull_handle_guide_neck_width": 3,
       "pull_handle_guide_head_back_z": -5.5,
@@ -294,19 +254,11 @@
       "pull_handle_wing_back_z": 0.4,
       "pull_handle_wing_thickness": 2
     },
-    "stop_left": {
-      "stop_left_width": 6,
-      "stop_left_neck_width": 3,
-      "stop_left_length": 30,
-      "stop_left_head_thickness": 2.5,
-      "stop_left_neck_height": 2.5
-    },
-    "stop_right": {
-      "stop_right_width": 6,
-      "stop_right_neck_width": 3,
-      "stop_right_length": 30,
-      "stop_right_head_thickness": 2.5,
-      "stop_right_neck_height": 2.5
+    "top_cover": {
+      "top_cover_width": 118,
+      "top_cover_depth": 8,
+      "top_cover_thickness": 2,
+      "top_cover_corner_radius": 2
     }
   }
 }

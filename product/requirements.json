@@ -18,7 +18,8 @@
         "base_curve_markup",
         "corner_rounding_markup",
         "opening_alignment_markup",
-        "pull_handle_markup"
+        "pull_handle_markup",
+        "top_cover_markup"
       ],
       "source": "user"
     },
@@ -66,12 +67,12 @@
         "黑色导向支架底座",
         "银色固定Logo面板",
         "银色活动拉柄",
-        "左右黑色导轨上限位塞"
+        "黑色顶部防脱盖板"
       ],
       "source": "default"
     },
     "assembly_method": {
-      "value": "固定Logo面板定位胶接；活动拉柄顶部装入双T形导槽，随后胶接独立上限位塞；滑动面禁止涂胶",
+      "value": "拉柄从顶部装入双T形导槽，随后胶接薄顶部盖板防脱；固定Logo面板定位胶接，滑动面禁止涂胶",
       "source": "default"
     },
     "logo_treatment": {
@@ -95,7 +96,8 @@
         "标注的顶部背板两角及窄横槽内角为R2 mm，与银色顶部圆角统一",
         "两镂空左右边缘对齐；银色下外角与大镂空同为R5；底边宽6 mm",
         "拉柄沿面板向下运动15 mm，Logo面板固定；导向防脱并有上下硬限位",
-        "校核闭合、中间和完全下拉位置无非预期干涉，实物验证滑动手感"
+        "校核闭合、中间和完全下拉位置无非预期干涉，实物验证滑动手感",
+        "拉柄收回时顶端与固定Logo面板齐平；导槽不以长塞占据，仅顶部薄盖板防脱"
       ],
       "source": "default"
     },
@@ -187,6 +189,14 @@
     "sliding_clearance_mm": {
       "value": 0.3,
       "source": "default"
+    },
+    "handle_top_retention": {
+      "value": "导槽保持空通，只在顶部用一块防脱盖板封住入口；不得使用长塞堵住导槽",
+      "source": "user"
+    },
+    "handle_closed_alignment": {
+      "value": "手柄能完全推上去，收回时手柄顶端与固定银色Logo面板顶端齐平",
+      "source": "user"
     }
   },
   "open_questions": []

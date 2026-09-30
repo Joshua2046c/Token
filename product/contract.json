@@ -93,10 +93,16 @@
       "source": "user_requested",
       "description": "外围银色边条与下框口做成15 mm下拉拉柄，固定Logo面板",
       "path": "product/references/uploads/20260930T171557359Z-1-mark.png"
+    },
+    {
+      "id": "top_cover_markup",
+      "source": "user_requested",
+      "description": "取消导轨长堵塞，只保留顶部防脱盖板；手柄推回后顶端与固定银色面板齐平",
+      "path": "product/references/uploads/20260930T172717432Z-1-mark.png"
     }
   ],
   "assembly_story": {
-    "installation": "先将银色拉柄从黑色双导槽顶部装入，再胶接顶部限位塞；固定Logo面板背面定位胶接，禁止胶进入导轨。",
+    "installation": "拉柄先从导槽顶部装入，之后胶接顶部薄盖板，最后定位胶接固定Logo面板；导槽内不得涂胶。",
     "maintenance": "手动下拉与推回；清理导轨，不强拉止挡。胶接后不承诺无损拆卸。",
     "user_access": [
       "正面 Logo 和银黑分件外观"
@@ -108,7 +114,7 @@
       {
         "role": "desk_ornament",
         "design_id": "desk_ornament",
-        "description": "固定Logo面板、活动银色拉柄、黑色导向支架与两上限位塞",
+        "description": "固定Logo面板、活动拉柄、黑色导向支架与单块顶部防脱盖板",
         "delivery_target": "printable_part",
         "required_formats": [
           "step"
@@ -129,7 +135,8 @@
           "base_curve_markup",
           "corner_rounding_markup",
           "opening_alignment_markup",
-          "pull_handle_markup"
+          "pull_handle_markup",
+          "top_cover_markup"
         ]
       }
     ]

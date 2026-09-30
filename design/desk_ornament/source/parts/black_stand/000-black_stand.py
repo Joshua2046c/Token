@@ -87,6 +87,10 @@ for sign in [-1,1]:
     head=Pos(gx,gy,black_stand_guide_back_z)*Box(black_stand_guide_head_width,gl,black_stand_guide_shoulder_z-black_stand_guide_back_z,align=(Align.CENTER,Align.CENTER,Align.MIN))
     neck=Pos(gx,gy,black_stand_guide_shoulder_z)*Box(black_stand_guide_neck_width,gl,-black_stand_guide_shoulder_z+0.2,align=(Align.CENTER,Align.CENTER,Align.MIN))
     body-=guide_pose*(head+neck)
+# Seat for one thin top cover, leaving 0.2 mm adhesive gap below it.
+black_stand_cover_seat_y=param("black_stand_cover_seat_y",72.8)
+seat=Pos(0,black_stand_cover_seat_y,black_stand_guide_back_z-black_stand_thickness)*Box(black_stand_width+2,black_stand_guide_entry_y-black_stand_cover_seat_y,black_stand_thickness*3,align=(Align.CENTER,Align.MIN,Align.MIN))
+body-=guide_pose*seat
 assert len(body.solids())==1
 assert body.is_valid
 # Uniform-density centroid of this printed body stays within the support footprint.
