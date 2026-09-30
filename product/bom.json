@@ -2,7 +2,7 @@
   "schema_version": 1,
   "status": "ready",
   "bom_ready": true,
-  "requirements_digest": "40195207719ed174709b96091a139174245165018c91194da3da5bc670dd8fda",
+  "requirements_digest": "3169e0f2300ddc7328e03322e2be8748a7ff93bd60e42a06710e15b92e013491",
   "items": [
     {
       "id": "silver_panel",
@@ -14,8 +14,15 @@
         "width": 120,
         "height": 150,
         "plate_thickness": 18,
-        "outer_corner_radius": 2,
-        "band_corner_radius": 2
+        "band_corner_radius": 2,
+        "upper_outer_corner_radius": 2,
+        "lower_outer_corner_radius": 5,
+        "window_corner_radius": 5,
+        "band_width": 110,
+        "window_width": 110,
+        "window_height": 38,
+        "window_center_y": -50,
+        "bottom_border": 6
       }
     },
     {

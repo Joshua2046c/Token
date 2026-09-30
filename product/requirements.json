@@ -16,7 +16,8 @@
         "correction_lifted",
         "correction_front",
         "base_curve_markup",
-        "corner_rounding_markup"
+        "corner_rounding_markup",
+        "opening_alignment_markup"
       ],
       "source": "user"
     },
@@ -88,7 +89,8 @@
         "尺寸与倾角可调；默认包络不超过124 × 95 × 244 mm，实际高度以CAD测量为准",
         "底座平整，CAD 阶段评估重心投影在支撑范围内，实际稳定性由实物验证",
         "完成 CAD 时检查装配干涉并导出相同版本 STEP",
-        "标注的顶部背板两角及窄横槽内角为R2 mm，与银色顶部圆角统一"
+        "标注的顶部背板两角及窄横槽内角为R2 mm，与银色顶部圆角统一",
+        "两镂空左右边缘对齐；银色下外角与大镂空同为R5；底边宽6 mm"
       ],
       "source": "default"
     },
@@ -139,6 +141,28 @@
     "marked_corner_rounding": {
       "value": "标注的顶部背板两角和中间窄横槽两端转角，与银色顶部现有R2 mm圆角统一",
       "source": "user"
+    },
+    "opening_alignment": {
+      "value": "两处镂空左右边缘对齐，横向中心一致",
+      "source": "user"
+    },
+    "lower_outline_rounding": {
+      "value": "银色下部外轮廓两角与内部大镂空圆角一致，采用R5 mm",
+      "source": "user"
+    },
+    "lower_border_narrowing": {
+      "value": "收窄红线标注的银色底边",
+      "source": "user"
+    },
+    "opening_dimensions_mm": {
+      "value": {
+        "common_width": 110,
+        "upper_height": 10,
+        "lower_height": 38,
+        "lower_center_y": -50,
+        "bottom_border": 6
+      },
+      "source": "default"
     }
   },
   "open_questions": []

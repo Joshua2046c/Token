@@ -1,29 +1,34 @@
-# cell: silver_panel
-# cell: silver_panel
 
 silver_panel_width = param("silver_panel_width", 120)
 silver_panel_height = param("silver_panel_height", 150.0)
 silver_panel_thickness = param("silver_panel_thickness", 18)
 silver_panel_corner_radius = param("silver_panel_corner_radius", 2.0)
 silver_panel_window_width = param("silver_panel_window_width", 110)
-silver_panel_window_height = param("silver_panel_window_height", 34.0)
+silver_panel_window_height = param("silver_panel_window_height", 38.0)
 silver_panel_window_radius = param("silver_panel_window_radius", 5.0)
-silver_panel_window_y = param("silver_panel_window_y", -48.0)
-silver_panel_band_width = param("silver_panel_band_width", 114)
+silver_panel_window_y = param("silver_panel_window_y", -50.0)
+silver_panel_band_width = param("silver_panel_band_width", 110)
 silver_panel_band_height = param("silver_panel_band_height", 10.0)
 silver_panel_band_y = param("silver_panel_band_y", -16.0)
 silver_panel_pin_diameter = param("silver_panel_pin_diameter", 4.0)
 silver_panel_pin_length = param("silver_panel_pin_length", 3.0)
 silver_panel_pin_half_pitch = param("silver_panel_pin_half_pitch", 45)
 silver_panel_pin_upper_y = param("silver_panel_pin_upper_y", 55.0)
-silver_panel_pin_lower_y = param("silver_panel_pin_lower_y", -69.0)
+silver_panel_pin_lower_y = param("silver_panel_pin_lower_y", -26.0)
 silver_panel_logo_width = param("silver_panel_logo_width", 32.0)
 silver_panel_logo_depth = param("silver_panel_logo_depth", 0.6)
 silver_panel_logo_x = param("silver_panel_logo_x", 0.0)
 silver_panel_logo_y = param("silver_panel_logo_y", 32.0)
 t=silver_panel_thickness
 assert 0<silver_panel_logo_depth<t
-plate=extrude(RectangleRounded(silver_panel_width,silver_panel_height,silver_panel_corner_radius),amount=t)
+# Lower outer corners share the window radius; upper corners keep R2.
+plate=extrude(Rectangle(silver_panel_width,silver_panel_height),amount=t)
+top_edges=[e for e in plate.edges().filter_by(Axis.Z) if e.center().Y>0]
+assert len(top_edges)==2
+plate=fillet(top_edges,radius=silver_panel_corner_radius)
+bottom_edges=[e for e in plate.edges().filter_by(Axis.Z) if e.center().Y<0]
+assert len(bottom_edges)==2
+plate=fillet(bottom_edges,radius=silver_panel_window_radius)
 window=Pos(0,silver_panel_window_y,0)*extrude(RectangleRounded(silver_panel_window_width,silver_panel_window_height,silver_panel_window_radius),amount=t)
 band=Pos(0,silver_panel_band_y,0)*extrude(RectangleRounded(silver_panel_band_width,silver_panel_band_height,silver_panel_corner_radius),amount=t)
 plate=plate-window-band

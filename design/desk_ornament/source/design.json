@@ -26,7 +26,7 @@
           "target": "silver_panel",
           "order": 0,
           "path": "design/desk_ornament/source/parts/silver_panel/000-silver_panel.py",
-          "sha256": "7af8138982d14a008ff7bd77b90a42b2eef2e3654c179aa032d20ef17a785e18"
+          "sha256": "25516cb9929c94057f1fc87b3392cb67efc4fa0c4205481bc6a7bec1a169e843"
         }
       ],
       "dependencies": []
@@ -39,7 +39,7 @@
       "label": "黑色支架底座",
       "material": "pla",
       "kind": "generated",
-      "shapeHash": "67d37253fac55759ddc07856116f63fa0c659a880759571dbc98bd2c63397caa",
+      "shapeHash": "482d6b680af496fa7e8eab6e88163b18bbf0d0695e62aacd3bab599286b00a57",
       "transform": {
         "positionMm": [
           0,
@@ -66,7 +66,7 @@
       "label": "银色面板",
       "material": "pla",
       "kind": "generated",
-      "shapeHash": "fbfab89cbebd0e51bcdb83779caca3b00f3f2c13186b37169d647fd6aba02a05",
+      "shapeHash": "5f44516dce9804a7c5c96b6f91dfd95b2c25d3d1090dd39faa63c298b28286c6",
       "transform": {
         "positionMm": [
           0,
@@ -90,7 +90,7 @@
   ],
   "assets": [],
   "fits": [],
-  "updatedAt": "2026-09-30T16:42:01.606Z",
+  "updatedAt": "2026-09-30T17:14:01.570Z",
   "parameters": {
     "black_stand": {
       "black_stand_width": 118,
@@ -109,7 +109,7 @@
       "black_stand_socket_depth": 3.4,
       "black_stand_socket_half_pitch": 45,
       "black_stand_socket_upper_z": 220.4370479853239,
-      "black_stand_socket_lower_z": 99.14674549433198,
+      "black_stand_socket_lower_z": 141.20709232588564,
       "black_stand_tilt_deg": 12,
       "black_stand_top_corner_radius": 2
     },
@@ -119,17 +119,17 @@
       "silver_panel_thickness": 18,
       "silver_panel_corner_radius": 2,
       "silver_panel_window_width": 110,
-      "silver_panel_window_height": 34,
+      "silver_panel_window_height": 38,
       "silver_panel_window_radius": 5,
-      "silver_panel_window_y": -48,
-      "silver_panel_band_width": 114,
+      "silver_panel_window_y": -50,
+      "silver_panel_band_width": 110,
       "silver_panel_band_height": 10,
       "silver_panel_band_y": -16,
       "silver_panel_pin_diameter": 4,
       "silver_panel_pin_length": 3,
       "silver_panel_pin_half_pitch": 45,
       "silver_panel_pin_upper_y": 55,
-      "silver_panel_pin_lower_y": -69,
+      "silver_panel_pin_lower_y": -26,
       "silver_panel_logo_width": 32,
       "silver_panel_logo_depth": 0.6,
       "silver_panel_logo_x": 0,
