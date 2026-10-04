@@ -1,0 +1,117 @@
+{
+  "schemaVersion": 1,
+  "entries": [
+    {
+      "file": "logo-trace.json",
+      "sha256": "0d156ee1e5b647aae165a50c1e7b980fe2104a95ae075f12ede68367b56133e9",
+      "bytes": 10518,
+      "addedAt": "2026-09-30T14:56:58.152Z",
+      "share": false
+    },
+    {
+      "file": "uploads/20260930T145159368Z-1-ishot-2026-09-30-10-48-51.png",
+      "sha256": "b98f3904e6dcae54b7783f84e4c4c1f23c824ca488a8e617a418fdfb4ac8b8b7",
+      "bytes": 168113,
+      "addedAt": "2026-09-30T14:51:59.564Z",
+      "share": false
+    },
+    {
+      "file": "uploads/20260930T145159368Z-2-ishot-2026-09-30-10-49-15.png",
+      "sha256": "4cde3c06b94a2870c16e8a9651a91ce2c3e464a64350a2dcac2408f920692ad5",
+      "bytes": 61606,
+      "addedAt": "2026-09-30T14:51:59.564Z",
+      "share": false
+    },
+    {
+      "file": "uploads/20260930T145159368Z-3-ishot-2026-09-30-10-50-10.png",
+      "sha256": "c6d5a6e774b39e36c0b210f04dbeca6adc0d1a5cbb418434320b44cfd0b6abf3",
+      "bytes": 89334,
+      "addedAt": "2026-09-30T14:51:59.564Z",
+      "share": false
+    },
+    {
+      "file": "uploads/20260930T150547805Z-1-ishot-2026-09-30-10-49-15.png",
+      "sha256": "4cde3c06b94a2870c16e8a9651a91ce2c3e464a64350a2dcac2408f920692ad5",
+      "bytes": 61606,
+      "addedAt": "2026-09-30T15:05:52.591Z",
+      "share": false
+    },
+    {
+      "file": "uploads/20260930T150547805Z-2-ishot-2026-09-30-10-49-34.png",
+      "sha256": "426b70b04490391c5d5b9cc3ccf38e85baeca0ccb959555202849ef7f476f461",
+      "bytes": 125228,
+      "addedAt": "2026-09-30T15:05:52.591Z",
+      "share": false
+    },
+    {
+      "file": "uploads/20260930T150547805Z-3-ishot-2026-09-30-10-48-51.png",
+      "sha256": "b98f3904e6dcae54b7783f84e4c4c1f23c824ca488a8e617a418fdfb4ac8b8b7",
+      "bytes": 168113,
+      "addedAt": "2026-09-30T15:05:52.591Z",
+      "share": false
+    },
+    {
+      "file": "uploads/20260930T151811023Z-1-mark.png",
+      "sha256": "a5ca93dc8eeb568d4363d99f8674b822826cea5ae8310a0e1e8bfef1a6e31119",
+      "bytes": 159503,
+      "addedAt": "2026-09-30T15:18:32.706Z",
+      "share": false
+    },
+    {
+      "file": "uploads/20260930T163826886Z-1-mark.png",
+      "sha256": "40b7864322da286413d94fe3c2f412813704fffb7584986b09ad988644963ebf",
+      "bytes": 638854,
+      "addedAt": "2026-09-30T16:38:38.254Z",
+      "share": false
+    },
+    {
+      "file": "uploads/20260930T171155990Z-1-mark.png",
+      "sha256": "a5114bed82da2fd1a8da8871290932a1809b64e79aa33f1ffb733736df19f556",
+      "bytes": 89198,
+      "addedAt": "2026-09-30T17:12:04.851Z",
+      "share": false
+    },
+    {
+      "file": "uploads/20260930T171557359Z-1-mark.png",
+      "sha256": "1250b2f11643a45028bc63a177b6735d2de3225452b26bdc9413c991aa93a399",
+      "bytes": 96852,
+      "addedAt": "2026-09-30T17:16:02.856Z",
+      "share": false
+    },
+    {
+      "file": "uploads/20260930T172717432Z-1-mark.png",
+      "sha256": "5d263ecb3f017ac64d653f8db8efaea0be0b94bffae4b538238593fb5f5f9c74",
+      "bytes": 318118,
+      "addedAt": "2026-09-30T17:27:38.533Z",
+      "share": false
+    },
+    {
+      "file": "uploads/20260930T173416904Z-1-mark.png",
+      "sha256": "2c85bbe5e4ab34e89fcbbd0bebfb25c4a553bcf6d7b9de1528e21dc71b374a08",
+      "bytes": 317387,
+      "addedAt": "2026-09-30T17:34:24.027Z",
+      "share": false
+    },
+    {
+      "file": "uploads/20260930T173416904Z-2-ishot-2026-10-01-1-32-58.png",
+      "sha256": "b3bef9912ebe04d559ea54f9f2e411a057d3ba10f305b74a016a31c198d5aafc",
+      "bytes": 424989,
+      "addedAt": "2026-09-30T17:34:24.028Z",
+      "share": false
+    },
+    {
+      "file": "uploads/20260930T173904638Z-1-mark.png",
+      "sha256": "ab845a7f2aebecd2610a95884bf3a49d825cae9cb3a1a3453fe2dd978c917e5f",
+      "bytes": 230573,
+      "addedAt": "2026-09-30T17:39:08.514Z",
+      "share": false
+    },
+    {
+      "file": "uploads/20260930T174126040Z-1-mark.png",
+      "sha256": "04fb3226e1985b1c5d421c4ecb34eafb3566e4f26a92a22e8d4cd573ef6e4f92",
+      "bytes": 52193,
+      "addedAt": "2026-09-30T17:41:32.926Z",
+      "share": false
+    }
+  ]
+}

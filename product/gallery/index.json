@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "entries": [
+    {
+      "file": "811c256c-718a-4752-8a8c-f9cd084e9fd4.jpg",
+      "kind": "photo"
+    },
+    {
+      "file": "cover-iso.jpg",
+      "kind": "render",
+      "generated": true
+    }
+  ]
+}

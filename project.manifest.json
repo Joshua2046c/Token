@@ -1,0 +1,8 @@
+{
+  "formatVersion": 4,
+  "name": "Token 重置",
+  "title": "银黑分件下拉桌面摆件",
+  "summary": "一款用于桌面装饰的银黑分件摆件，采用固定Logo面板与隐藏导轨拉柄，可手动下拉约15毫米并推回，支持分件3D打印装配。",
+  "license": "MIT",
+  "artifacts": "rebuild"
+}
