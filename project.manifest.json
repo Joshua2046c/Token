@@ -1,8 +1,13 @@
 {
   "formatVersion": 4,
-  "name": "Token 重置",
-  "title": "银黑分件下拉桌面摆件",
-  "summary": "一款用于桌面装饰的银黑分件摆件，采用固定Logo面板与隐藏导轨拉柄，可手动下拉约15毫米并推回，支持分件3D打印装配。",
+  "name": "重置之神",
+  "title": "重置之神",
+  "summary": "复刻 OpenAI Tibo 的「Codex 全局重置按钮」实体模型～传说只要按下，就能一次性重置全世界所有 Codex 用户的 Token 额度",
   "license": "MIT",
+  "authors": [
+    {
+      "name": "Miles"
+    }
+  ],
   "artifacts": "rebuild"
 }
